@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sculptures, sacs en raphia, tissus et bijoux faits main par les artisans de Foumban et de Bamenda.">
+  <title>Commandes (admin) – Mains de l'Ouest</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Instrument+Sans:wght@400;600&display=swap">
+  <link rel="stylesheet" href="static/css/style.css">
+  <link rel="icon" href="static/images/motif.svg" type="image/svg+xml">
+</head>
+<body>
+  <a class="lien-evitement" href="#contenu">Aller au contenu</a>
+  <header class="entete">
+    <div class="conteneur entete-grille">
+      <a class="marque" href="index.html">
+        <img src="static/images/motif.svg" alt="" width="34" height="34">
+        <span>Mains de l'Ouest</span>
+      </a>
+      <form class="recherche" role="search" method="get" action="catalogue.html">
+        <label class="sr-only" for="recherche-q">Rechercher un produit</label>
+        <input type="search" id="recherche-q" name="q" placeholder="Rechercher un masque, un sac, un pagne…" value="">
+        <button type="submit" class="recherche-bouton">Rechercher</button>
+      </form>
+      <a class="panier-lien" href="panier.html" aria-label="Voir le panier">
+        <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M3 4h2.5l2.2 10.5h9.6L19.5 7H7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9.5" cy="19" r="1.5" fill="currentColor"/><circle cx="16.5" cy="19" r="1.5" fill="currentColor"/></svg>
+        <span class="panier-compteur" id="compteur-panier">0</span>
+      </a>
+      <nav class="navigation" aria-label="Navigation principale">
+        <ul>
+          <li><a href="index.html" >Accueil</a></li>
+          <li><a href="catalogue.html" >Catalogue</a></li>
+          
+          <li><a href="admin_tableau.html">Administration</a></li>
+          
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  
+    
+  
+
+  <main id="contenu">
+    
+<div class="conteneur bloc">
+<h1>Commandes</h1>
+<nav class="sous-menu" aria-label="Administration">
+  <a href="admin_tableau.html">Tableau de bord</a>
+  <a href="admin_produits.html">Produits</a>
+</nav>
+<form class="filtres" method="get">
+  <div class="champ">
+    <label for="statut">Filtrer par statut</label>
+    <select id="statut" name="statut">
+      <option value="">Tous</option>
+      
+      <option value="recue" >Reçue</option>
+      
+      <option value="preparee" >Préparée</option>
+      
+      <option value="livree" >Livrée</option>
+      
+      <option value="annulee" >Annulée</option>
+      
+    </select>
+  </div>
+  <button class="bouton" type="submit">Filtrer</button>
+</form>
+<p>60 commandes.</p>
+<div class="tableau-defilant">
+  <table>
+    <thead><tr><th scope="col">N°</th><th scope="col">Date</th><th scope="col">Client</th><th scope="col">Paiement</th><th scope="col">Total</th><th scope="col">Statut</th></tr></thead>
+    <tbody>
+      
+      <tr>
+        <td><a href="admin_commande.html">#60</a></td>
+        <td>2026-10-12</td>
+        <td>Ibrahim Mbarga</td>
+        <td>Mobile money</td>
+        <td>40 500 FCFA</td>
+        <td><span class="badge badge-recue">Reçue</span></td>
+      </tr>
+      
+      <tr>
+        <td><a href="admin_commande.html">#59</a></td>
+        <td>2026-07-07</td>
+        <td>Paul Mbarga</td>
+        <td>Mobile money</td>
+        <td>115 000 FCFA</td>
+        <td><span class="badge badge-annulee">Annulée</span></td>
+      </tr>
+      
+      <tr>
+        <td><a href="admin_commande.html">#58</a></td>
+        <td>2026-08-11</td>
+        <td>Ibrahim Bello</td>
+        <td>Mobile money</td>
+        <td>73 500 FCFA</td>
+        <td><span class="badge badge-livree">Livrée</span></td>
+      </tr>
+      
+      <tr>
+        <td><a href="admin_commande.html">#57</a></td>
+        <td>2026-06-24</td>
+        <td>Marie Tchoupo</td>
+        <td>Paiement à la livraison</td>
+        <td>256 500 FCFA</td>
+        <td><span class="badge badge-recue">Reçue</span></td>
+      </tr>
+      
+      <tr>
+        <td><a href="admin_commande.html">#56</a></td>
+        <td>2026-09-04</td>
+        <td>Moussa Njoya</td>
+        <td>Mobile money</td>
+        <td>79 000 FCFA</td>
+        <td><span class="badge badge-livree">Livrée</span></td>
+      </tr>
+      
+      <tr>
+        <td><a href="admin_commande.html">#55</a></td>
+        <td>2026-08-01</td>
+        <td>Marie Atangana</td>
+        <td>Paiement à la livraison</td>
+        <td>72 500 FCFA</td>
+        <td><span class="badge badge-livree">Livrée</span></td>
+      </tr>
+      
+      <tr>
+        <td><a href="admin_commande.html">#54</a></td>
+        <td>2026-08-16</td>
+        <td>Marie Tchoupo</td>
+        <td>Mobile money</td>
+        <td>121 500 FCFA</td>
+        <td><span class="badge badge-recue">Reçue</span></td>
+      </tr>
+      
+      <tr>
+        <td><a href="admin_commande.html">#53</a></td>
+        <td>2026-09-19</td>
+        <td>Aline Fotso</td>
+        <td>Paiement à la livraison</td>
+        <td>27 000 FCFA</td>
+        <td><span class="badge badge-livree">Livrée</span></td>
+      </tr>
+      
+      <tr>
+        <td><a href="admin_commande.html">#52</a></td>
+        <td>2026-09-22</td>
+        <td>Moussa Ekane</td>
+        <td>Mobile money</td>
+        <td>27 000 FCFA</td>
+        <td><span class="badge badge-livree">Livrée</span></td>
+      </tr>
+      
+      <tr>
+        <td><a href="admin_commande.html">#51</a></td>
+        <td>2026-09-03</td>
+        <td>Aline Njoya</td>
+        <td>Mobile money</td>
+        <td>59 000 FCFA</td>
+        <td><span class="badge badge-preparee">Préparée</span></td>
+      </tr>
+      
+      <tr>
+        <td><a href="admin_commande.html">#50</a></td>
+        <td>2026-08-30</td>
+        <td>Ibrahim Ngo Bassa</td>
+        <td>Mobile money</td>
+        <td>99 000 FCFA</td>
+        <td><span class="badge badge-preparee">Préparée</span></td>
+      </tr>
+      
+      <tr>
+        <td><a href="admin_commande.html">#49</a></td>
+        <td>2026-08-10</td>
+        <td>Sandra Ngo Bassa</td>
+        <td>Paiement à la livraison</td>
+        <td>69 000 FCFA</td>
+        <td><span class="badge badge-preparee">Préparée</span></td>
+      </tr>
+      
+      <tr>
+        <td><a href="admin_commande.html">#48</a></td>
+        <td>2026-07-07</td>
+        <td>Sandra Tchoupo</td>
+        <td>Mobile money</td>
+        <td>40 000 FCFA</td>
+        <td><span class="badge badge-livree">Livrée</span></td>
+      </tr>
+      
+      <tr>
+        <td><a href="admin_commande.html">#47</a></td>
+        <td>2026-07-06</td>
+        <td>Moussa Bello</td>
+        <td>Paiement à la livraison</td>
+        <td>51 000 FCFA</td>
+        <td><span class="badge badge-livree">Livrée</span></td>
+      </tr>
+      
+      <tr>
+        <td><a href="admin_commande.html">#46</a></td>
+        <td>2026-08-25</td>
+        <td>Ibrahim Mbarga</td>
+        <td>Paiement à la livraison</td>
+        <td>151 000 FCFA</td>
+        <td><span class="badge badge-preparee">Préparée</span></td>
+      </tr>
+      
+      <tr>
+        <td><a href="admin_commande.html">#45</a></td>
+        <td>2026-08-17</td>
+        <td>Sandra Mbarga</td>
+        <td>Mobile money</td>
+        <td>17 500 FCFA</td>
+        <td><span class="badge badge-livree">Livrée</span></td>
+      </tr>
+      
+      <tr>
+        <td><a href="admin_commande.html">#44</a></td>
+        <td>2026-06-03</td>
+        <td>Ibrahim Ekane</td>
+        <td>Mobile money</td>
+        <td>78 000 FCFA</td>
+        <td><span class="badge badge-livree">Livrée</span></td>
+      </tr>
+      
+      <tr>
+        <td><a href="admin_commande.html">#43</a></td>
+        <td>2026-06-15</td>
+        <td>Rose Fotso</td>
+        <td>Mobile money</td>
+        <td>45 500 FCFA</td>
+        <td><span class="badge badge-recue">Reçue</span></td>
+      </tr>
+      
+      <tr>
+        <td><a href="admin_commande.html">#42</a></td>
+        <td>2026-05-27</td>
+        <td>Sandra Ngo Bassa</td>
+        <td>Mobile money</td>
+        <td>158 000 FCFA</td>
+        <td><span class="badge badge-livree">Livrée</span></td>
+      </tr>
+      
+      <tr>
+        <td><a href="admin_commande.html">#41</a></td>
+        <td>2026-07-31</td>
+        <td>Paul Atangana</td>
+        <td>Paiement à la livraison</td>
+        <td>42 000 FCFA</td>
+        <td><span class="badge badge-livree">Livrée</span></td>
+      </tr>
+      
+      <tr>
+        <td><a href="admin_commande.html">#40</a></td>
+        <td>2026-05-27</td>
+        <td>Paul Fotso</td>
+        <td>Paiement à la livraison</td>
+        <td>93 000 FCFA</td>
+        <td><span class="badge badge-annulee">Annulée</span></td>
+      </tr>
+      
+      <tr>
+        <td><a href="admin_commande.html">#39</a></td>
+        <td>2026-08-22</td>
+        <td>Aline Fotso</td>
+        <td>Paiement à la livraison</td>
+        <td>64 000 FCFA</td>
+        <td><span class="badge badge-livree">Livrée</span></td>
+      </tr>
+      
+      <tr>
+        <td><a href="admin_commande.html">#38</a></td>
+        <td>2026-06-24</td>
+        <td>Paul Bello</td>
+        <td>Mobile money</td>
+        <td>65 000 FCFA</td>
+        <td><span class="badge badge-preparee">Préparée</span></td>
+      </tr>
+      
+      <tr>
+        <td><a href="admin_commande.html">#37</a></td>
+        <td>2026-05-27</td>
+        <td>Kevin Mbarga</td>
+        <td>Paiement à la livraison</td>
+        <td>26 000 FCFA</td>
+        <td><span class="badge badge-livree">Livrée</span></td>
+      </tr>
+      
+      <tr>
+        <td><a href="admin_commande.html">#36</a></td>
+        <td>2026-06-16</td>
+        <td>Moussa Fotso</td>
+        <td>Mobile money</td>
+        <td>30 000 FCFA</td>
+        <td><span class="badge badge-recue">Reçue</span></td>
+      </tr>
+      
+      <tr>
+        <td><a href="admin_commande.html">#35</a></td>
+        <td>2026-05-24</td>
+        <td>Rose Atangana</td>
+        <td>Mobile money</td>
+        <td>156 000 FCFA</td>
+        <td><span class="badge badge-livree">Livrée</span></td>
+      </tr>
+      
+      <tr>
+        <td><a href="admin_commande.html">#34</a></td>
+        <td>2026-10-02</td>
+        <td>Aline Atangana</td>
+        <td>Paiement à la livraison</td>
+        <td>62 000 FCFA</td>
+        <td><span class="badge badge-livree">Livrée</span></td>
+      </tr>
+      
+      <tr>
+        <td><a href="admin_commande.html">#33</a></td>
+        <td>2026-08-19</td>
+        <td>Kevin Atangana</td>
+        <td>Paiement à la livraison</td>
+        <td>27 000 FCFA</td>
+        <td><span class="badge badge-preparee">Préparée</span></td>
+      </tr>
+      
+      <tr>
+        <td><a href="admin_commande.html">#32</a></td>
+        <td>2026-06-25</td>
+        <td>Marie Njoya</td>
+        <td>Mobile money</td>
+        <td>59 500 FCFA</td>
+        <td><span class="badge badge-preparee">Préparée</span></td>
+      </tr>
+      
+      <tr>
+        <td><a href="admin_commande.html">#31</a></td>
+        <td>2026-09-14</td>
+        <td>Moussa Tchoupo</td>
+        <td>Mobile money</td>
+        <td>79 000 FCFA</td>
+        <td><span class="badge badge-livree">Livrée</span></td>
+      </tr>
+      
+      <tr>
+        <td><a href="admin_commande.html">#30</a></td>
+        <td>2026-10-17</td>
+        <td>Moussa Mbarga</td>
+        <td>Mobile money</td>
+        <td>108 500 FCFA</td>
+        <td><span class="badge badge-livree">Livrée</span></td>
+      </tr>
+      
+      <tr>
+        <td><a href="admin_commande.html">#29</a></td>
+        <td>2026-09-11</td>
+        <td>Marie Tchoupo</td>
+        <td>Paiement à la livraison</td>
+        <td>32 500 FCFA</td>
+        <td><span class="badge badge-recue">Reçue</span></td>
+      </tr>
+      
+      <tr>
+        <td><a href="admin_commande.html">#28</a></td>
+        <td>2026-06-10</td>
+        <td>Sandra Ngo Bassa</td>
+        <td>Paiement à la livraison</td>
+        <td>46 500 FCFA</td>
+        <td><span class="badge badge-livree">Livrée</span></td>
+      </tr>
+      
+      <tr>
+        <td><a href="admin_commande.html">#27</a></td>
+        <td>2026-05-26</td>
+        <td>Sandra Bello</td>
+        <td>Paiement à la livraison</td>
+        <td>73 000 FCFA</td>
+        <td><span class="badge badge-preparee">Préparée</span></td>
+      </tr>
+      
+      <tr>
+        <td><a href="admin_commande.html">#26</a></td>
+        <td>2026-06-11</td>
+        <td>Kevin Atangana</td>
+        <td>Paiement à la livraison</td>
+        <td>100 500 FCFA</td>
+        <td><span class="badge badge-preparee">Préparée</span></td>
+      </tr>
+      
+      <tr>
+        <td><a href="admin_commande.html">#25</a></td>
+        <td>2026-06-29</td>
+        <td>Sandra Ekane</td>
+        <td>Mobile money</td>
+        <td>110 500 FCFA</td>
+        <td><span class="badge badge-recue">Reçue</span></td>
+      </tr>
+      
+      <tr>
+        <td><a href="admin_commande.html">#24</a></td>
+        <td>2026-10-09</td>
+        <td>Paul Tchoupo</td>
+        <td>Paiement à la livraison</td>
+        <td>162 000 FCFA</td>
+        <td><span class="badge badge-recue">Reçue</span></td>
+      </tr>
+      
+      <tr>
+        <td><a href="admin_commande.html">#23</a></td>
+        <td>2026-08-08</td>
+        <td>Sandra Mbarga</td>
+        <td>Mobile money</td>
+        <td>272 500 FCFA</td>
+        <td><span class="badge badge-livree">Livrée</span></td>
+      </tr>
+      
+      <tr>
+        <td><a href="admin_commande.html">#22</a></td>
+        <td>2026-07-13</td>
+        <td>Marie Atangana</td>
+        <td>Mobile money</td>
+        <td>126 000 FCFA</td>
+        <td><span class="badge badge-livree">Livrée</span></td>
+      </tr>
+      
+      <tr>
+        <td><a href="admin_commande.html">#21</a></td>
+        <td>2026-08-19</td>
+        <td>Rose Atangana</td>
+        <td>Paiement à la livraison</td>
+        <td>112 000 FCFA</td>
+        <td><span class="badge badge-livree">Livrée</span></td>
+      </tr>
+      
+      <tr>
+        <td><a href="admin_commande.html">#20</a></td>
+        <td>2026-09-16</td>
+        <td>Paul Ekane</td>
+        <td>Paiement à la livraison</td>
+        <td>184 000 FCFA</td>
+        <td><span class="badge badge-recue">Reçue</span></td>
+      </tr>
+      
+      <tr>
+        <td><a href="admin_commande.html">#19</a></td>
+        <td>2026-05-30</td>
+        <td>Aline Ekane</td>
+        <td>Mobile money</td>
+        <td>123 500 FCFA</td>
+        <td><span class="badge badge-livree">Livrée</span></td>
+      </tr>
+      
+      <tr>
+        <td><a href="admin_commande.html">#18</a></td>
+        <td>2026-08-15</td>
+        <td>Sandra Fotso</td>
+        <td>Mobile money</td>
+        <td>61 000 FCFA</td>
+        <td><span class="badge badge-livree">Livrée</span></td>
+      </tr>
+      
+      <tr>
+        <td><a href="admin_commande.html">#17</a></td>
+        <td>2026-09-14</td>
+        <td>Marie Ekane</td>
+        <td>Mobile money</td>
+        <td>99 500 FCFA</td>
+        <td><span class="badge badge-preparee">Préparée</span></td>
+      </tr>
+      
+      <tr>
+        <td><a href="admin_commande.html">#16</a></td>
+        <td>2026-10-01</td>
+        <td>Ibrahim Mbarga</td>
+        <td>Paiement à la livraison</td>
+        <td>61 500 FCFA</td>
+        <td><span class="badge badge-livree">Livrée</span></td>
+      </tr>
+      
+      <tr>
+        <td><a href="admin_commande.html">#15</a></td>
+        <td>2026-06-23</td>
+        <td>Paul Atangana</td>
+        <td>Mobile money</td>
+        <td>198 500 FCFA</td>
+        <td><span class="badge badge-preparee">Préparée</span></td>
+      </tr>
+      
+      <tr>
+        <td><a href="admin_commande.html">#14</a></td>
+        <td>2026-09-28</td>
+        <td>Sandra Atangana</td>
+        <td>Mobile money</td>
+        <td>52 000 FCFA</td>
+        <td><span class="badge badge-livree">Livrée</span></td>
+      </tr>
+      
+      <tr>
+        <td><a href="admin_commande.html">#13</a></td>
+        <td>2026-10-04</td>
+        <td>Marie Tchoupo</td>
+        <td>Paiement à la livraison</td>
+        <td>89 000 FCFA</td>
+        <td><span class="badge badge-annulee">Annulée</span></td>
+      </tr>
+      
+      <tr>
+        <td><a href="admin_commande.html">#12</a></td>
+        <td>2026-09-09</td>
+        <td>Sandra Mbarga</td>
+        <td>Paiement à la livraison</td>
+        <td>184 500 FCFA</td>
+        <td><span class="badge badge-preparee">Préparée</span></td>
+      </tr>
+      
+      <tr>
+        <td><a href="admin_commande.html">#11</a></td>
+        <td>2026-06-17</td>
+        <td>Ibrahim Bello</td>
+        <td>Mobile money</td>
+        <td>50 500 FCFA</td>
+        <td><span class="badge badge-preparee">Préparée</span></td>
+      </tr>
+      
+      <tr>
+        <td><a href="admin_commande.html">#10</a></td>
+        <td>2026-08-16</td>
+        <td>Aline Ngo Bassa</td>
+        <td>Mobile money</td>
+        <td>76 000 FCFA</td>
+        <td><span class="badge badge-livree">Livrée</span></td>
+      </tr>
+      
+      <tr>
+        <td><a href="admin_commande.html">#9</a></td>
+        <td>2026-09-23</td>
+        <td>Moussa Fotso</td>
+        <td>Mobile money</td>
+        <td>34 500 FCFA</td>
+        <td><span class="badge badge-recue">Reçue</span></td>
+      </tr>
+      
+      <tr>
+        <td><a href="admin_commande.html">#8</a></td>
+        <td>2026-08-17</td>
+        <td>Sandra Tchoupo</td>
+        <td>Paiement à la livraison</td>
+        <td>137 500 FCFA</td>
+        <td><span class="badge badge-livree">Livrée</span></td>
+      </tr>
+      
+      <tr>
+        <td><a href="admin_commande.html">#7</a></td>
+        <td>2026-10-10</td>
+        <td>Marie Fotso</td>
+        <td>Mobile money</td>
+        <td>164 500 FCFA</td>
+        <td><span class="badge badge-livree">Livrée</span></td>
+      </tr>
+      
+      <tr>
+        <td><a href="admin_commande.html">#6</a></td>
+        <td>2026-09-18</td>
+        <td>Marie Mbarga</td>
+        <td>Paiement à la livraison</td>
+        <td>121 000 FCFA</td>
+        <td><span class="badge badge-preparee">Préparée</span></td>
+      </tr>
+      
+      <tr>
+        <td><a href="admin_commande.html">#5</a></td>
+        <td>2026-08-12</td>
+        <td>Marie Njoya</td>
+        <td>Mobile money</td>
+        <td>192 000 FCFA</td>
+        <td><span class="badge badge-livree">Livrée</span></td>
+      </tr>
+      
+      <tr>
+        <td><a href="admin_commande.html">#4</a></td>
+        <td>2026-08-01</td>
+        <td>Paul Fotso</td>
+        <td>Paiement à la livraison</td>
+        <td>23 000 FCFA</td>
+        <td><span class="badge badge-preparee">Préparée</span></td>
+      </tr>
+      
+      <tr>
+        <td><a href="admin_commande.html">#3</a></td>
+        <td>2026-08-03</td>
+        <td>Aline Ekane</td>
+        <td>Mobile money</td>
+        <td>100 500 FCFA</td>
+        <td><span class="badge badge-livree">Livrée</span></td>
+      </tr>
+      
+      <tr>
+        <td><a href="admin_commande.html">#2</a></td>
+        <td>2026-06-03</td>
+        <td>Aline Njoya</td>
+        <td>Paiement à la livraison</td>
+        <td>39 500 FCFA</td>
+        <td><span class="badge badge-livree">Livrée</span></td>
+      </tr>
+      
+      <tr>
+        <td><a href="admin_commande.html">#1</a></td>
+        <td>2026-09-08</td>
+        <td>Moussa Njoya</td>
+        <td>Paiement à la livraison</td>
+        <td>139 500 FCFA</td>
+        <td><span class="badge badge-livree">Livrée</span></td>
+      </tr>
+      
+    </tbody>
+  </table>
+</div>
+</div>
+
+  </main>
+
+  <footer class="pied">
+    <div class="conteneur pied-grille">
+      <div>
+        <p class="pied-titre">Mains de l'Ouest</p>
+        <p>Une coopérative d'artisans de Foumban et de Bamenda. Sculpture sur bois, raphia, tissage et bijoux.</p>
+      </div>
+      <div>
+        <p class="pied-titre">Commander</p>
+        <p>Paiement à la livraison ou par mobile money.</p>
+        <p><a href="catalogue.html">Parcourir le catalogue</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden>
+    <span id="toast-texte"></span>
+    <a href="panier.html">Voir le panier</a>
+  </div>
+
+  <script src="static/js/panier.js"></script>
+  
+</body>
+</html>

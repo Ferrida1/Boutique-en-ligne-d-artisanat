@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sculptures, sacs en raphia, tissus et bijoux faits main par les artisans de Foumban et de Bamenda.">
+  <title>Ajouter un produit – Mains de l'Ouest</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Instrument+Sans:wght@400;600&display=swap">
+  <link rel="stylesheet" href="static/css/style.css">
+  <link rel="icon" href="static/images/motif.svg" type="image/svg+xml">
+</head>
+<body>
+  <a class="lien-evitement" href="#contenu">Aller au contenu</a>
+  <header class="entete">
+    <div class="conteneur entete-grille">
+      <a class="marque" href="index.html">
+        <img src="static/images/motif.svg" alt="" width="34" height="34">
+        <span>Mains de l'Ouest</span>
+      </a>
+      <form class="recherche" role="search" method="get" action="catalogue.html">
+        <label class="sr-only" for="recherche-q">Rechercher un produit</label>
+        <input type="search" id="recherche-q" name="q" placeholder="Rechercher un masque, un sac, un pagne…" value="">
+        <button type="submit" class="recherche-bouton">Rechercher</button>
+      </form>
+      <a class="panier-lien" href="panier.html" aria-label="Voir le panier">
+        <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M3 4h2.5l2.2 10.5h9.6L19.5 7H7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9.5" cy="19" r="1.5" fill="currentColor"/><circle cx="16.5" cy="19" r="1.5" fill="currentColor"/></svg>
+        <span class="panier-compteur" id="compteur-panier">0</span>
+      </a>
+      <nav class="navigation" aria-label="Navigation principale">
+        <ul>
+          <li><a href="index.html" >Accueil</a></li>
+          <li><a href="catalogue.html" >Catalogue</a></li>
+          
+          <li><a href="admin_tableau.html">Administration</a></li>
+          
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  
+    
+  
+
+  <main id="contenu">
+    
+<div class="conteneur bloc">
+<section class="formulaire-etroit">
+  <h1>Ajouter un produit</h1>
+  <form method="post" novalidate id="form-produit">
+    <input type="hidden" name="csrf" value="9d49031d94c4a39bd7192099fe2e73ac">
+    <div class="champ">
+      <label for="nom">Nom</label>
+      <input type="text" id="nom" name="nom" required maxlength="100" value="">
+    </div>
+    <div class="champ">
+      <label for="categorie_id">Catégorie</label>
+      <select id="categorie_id" name="categorie_id" required>
+        
+        <option value="4" >Bijoux</option>
+        
+        <option value="5" >Décoration</option>
+        
+        <option value="2" >Sacs en raphia</option>
+        
+        <option value="1" >Sculptures</option>
+        
+        <option value="3" >Tissus</option>
+        
+      </select>
+    </div>
+    <div class="champ">
+      <label for="description">Description</label>
+      <textarea id="description" name="description" rows="4"></textarea>
+    </div>
+    <div class="champ">
+      <label for="prix">Prix (FCFA)</label>
+      <input type="number" id="prix" name="prix" required min="1" step="1" value="">
+    </div>
+    <div class="champ">
+      <label for="stock">Stock</label>
+      <input type="number" id="stock" name="stock" required min="0" step="1" value="0">
+    </div>
+    <div class="champ">
+      <label for="artisan">Artisan</label>
+      <input type="text" id="artisan" name="artisan" required maxlength="80" value="">
+    </div>
+    <div class="champ">
+      <label for="image">Fichier image (dans static/images)</label>
+      <input type="text" id="image" name="image" value="sculpture.svg">
+    </div>
+    <button class="bouton" type="submit">Enregistrer</button>
+    <a class="bouton bouton-secondaire" href="admin_produits.html">Annuler</a>
+  </form>
+</section>
+</div>
+
+  </main>
+
+  <footer class="pied">
+    <div class="conteneur pied-grille">
+      <div>
+        <p class="pied-titre">Mains de l'Ouest</p>
+        <p>Une coopérative d'artisans de Foumban et de Bamenda. Sculpture sur bois, raphia, tissage et bijoux.</p>
+      </div>
+      <div>
+        <p class="pied-titre">Commander</p>
+        <p>Paiement à la livraison ou par mobile money.</p>
+        <p><a href="catalogue.html">Parcourir le catalogue</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden>
+    <span id="toast-texte"></span>
+    <a href="panier.html">Voir le panier</a>
+  </div>
+
+  <script src="static/js/panier.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sculptures, sacs en raphia, tissus et bijoux faits main par les artisans de Foumban et de Bamenda.">
+  <title>Produits (admin) – Mains de l'Ouest</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Instrument+Sans:wght@400;600&display=swap">
+  <link rel="stylesheet" href="static/css/style.css">
+  <link rel="icon" href="static/images/motif.svg" type="image/svg+xml">
+</head>
+<body>
+  <a class="lien-evitement" href="#contenu">Aller au contenu</a>
+  <header class="entete">
+    <div class="conteneur entete-grille">
+      <a class="marque" href="index.html">
+        <img src="static/images/motif.svg" alt="" width="34" height="34">
+        <span>Mains de l'Ouest</span>
+      </a>
+      <form class="recherche" role="search" method="get" action="catalogue.html">
+        <label class="sr-only" for="recherche-q">Rechercher un produit</label>
+        <input type="search" id="recherche-q" name="q" placeholder="Rechercher un masque, un sac, un pagne…" value="">
+        <button type="submit" class="recherche-bouton">Rechercher</button>
+      </form>
+      <a class="panier-lien" href="panier.html" aria-label="Voir le panier">
+        <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M3 4h2.5l2.2 10.5h9.6L19.5 7H7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9.5" cy="19" r="1.5" fill="currentColor"/><circle cx="16.5" cy="19" r="1.5" fill="currentColor"/></svg>
+        <span class="panier-compteur" id="compteur-panier">0</span>
+      </a>
+      <nav class="navigation" aria-label="Navigation principale">
+        <ul>
+          <li><a href="index.html" >Accueil</a></li>
+          <li><a href="catalogue.html" >Catalogue</a></li>
+          
+          <li><a href="admin_tableau.html">Administration</a></li>
+          
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  
+    
+  
+
+  <main id="contenu">
+    
+<div class="conteneur bloc">
+<h1>Gestion des produits</h1>
+<nav class="sous-menu" aria-label="Administration">
+  <a href="admin_tableau.html">Tableau de bord</a>
+  <a href="admin_commandes.html">Commandes</a>
+  <a class="bouton bouton-petit" href="admin_produit_form.html">Ajouter un produit</a>
+</nav>
+<div class="tableau-defilant">
+  <table>
+    <thead><tr><th scope="col">Produit</th><th scope="col">Catégorie</th><th scope="col">Prix</th><th scope="col">Stock</th><th scope="col">État</th><th scope="col">Actions</th></tr></thead>
+    <tbody>
+      
+      <tr class="">
+        <td>Bague en bronze</td>
+        <td>Bijoux</td>
+        <td>7 000 FCFA</td>
+        <td class="">8</td>
+        <td>Actif</td>
+        <td class="actions">
+          <a href="admin_produit_form.html">Modifier</a>
+          <form method="post" action="admin_produits.html" class="en-ligne">
+            <input type="hidden" name="csrf" value="9d49031d94c4a39bd7192099fe2e73ac">
+            <button type="submit" class="lien-bouton">Désactiver</button>
+          </form>
+        </td>
+      </tr>
+      
+      <tr class="">
+        <td>Bol sculpté</td>
+        <td>Décoration</td>
+        <td>6 000 FCFA</td>
+        <td class="">8</td>
+        <td>Actif</td>
+        <td class="actions">
+          <a href="admin_produit_form.html">Modifier</a>
+          <form method="post" action="admin_produits.html" class="en-ligne">
+            <input type="hidden" name="csrf" value="9d49031d94c4a39bd7192099fe2e73ac">
+            <button type="submit" class="lien-bouton">Désactiver</button>
+          </form>
+        </td>
+      </tr>
+      
+      <tr class="">
+        <td>Boubou brodé</td>
+        <td>Tissus</td>
+        <td>65 000 FCFA</td>
+        <td class="">8</td>
+        <td>Actif</td>
+        <td class="actions">
+          <a href="admin_produit_form.html">Modifier</a>
+          <form method="post" action="admin_produits.html" class="en-ligne">
+            <input type="hidden" name="csrf" value="9d49031d94c4a39bd7192099fe2e73ac">
+            <button type="submit" class="lien-bouton">Désactiver</button>
+          </form>
+        </td>
+      </tr>
+      
+      <tr class="">
+        <td>Boucles d&#39;oreilles perlées</td>
+        <td>Bijoux</td>
+        <td>3 000 FCFA</td>
+        <td class="stock-faible">4</td>
+        <td>Actif</td>
+        <td class="actions">
+          <a href="admin_produit_form.html">Modifier</a>
+          <form method="post" action="admin_produits.html" class="en-ligne">
+            <input type="hidden" name="csrf" value="9d49031d94c4a39bd7192099fe2e73ac">
+            <button type="submit" class="lien-bouton">Désactiver</button>
+          </form>
+        </td>
+      </tr>
+      
+      <tr class="">
+        <td>Bracelet en laiton</td>
+        <td>Bijoux</td>
+        <td>8 000 FCFA</td>
+        <td class="stock-faible">4</td>
+        <td>Actif</td>
+        <td class="actions">
+          <a href="admin_produit_form.html">Modifier</a>
+          <form method="post" action="admin_produits.html" class="en-ligne">
+            <input type="hidden" name="csrf" value="9d49031d94c4a39bd7192099fe2e73ac">
+            <button type="submit" class="lien-bouton">Désactiver</button>
+          </form>
+        </td>
+      </tr>
+      
+      <tr class="">
+        <td>Cadre en bois sculpté</td>
+        <td>Décoration</td>
+        <td>12 000 FCFA</td>
+        <td class="">8</td>
+        <td>Actif</td>
+        <td class="actions">
+          <a href="admin_produit_form.html">Modifier</a>
+          <form method="post" action="admin_produits.html" class="en-ligne">
+            <input type="hidden" name="csrf" value="9d49031d94c4a39bd7192099fe2e73ac">
+            <button type="submit" class="lien-bouton">Désactiver</button>
+          </form>
+        </td>
+      </tr>
+      
+      <tr class="">
+        <td>Calebasse décorée</td>
+        <td>Décoration</td>
+        <td>9 000 FCFA</td>
+        <td class="stock-faible">3</td>
+        <td>Actif</td>
+        <td class="actions">
+          <a href="admin_produit_form.html">Modifier</a>
+          <form method="post" action="admin_produits.html" class="en-ligne">
+            <input type="hidden" name="csrf" value="9d49031d94c4a39bd7192099fe2e73ac">
+            <button type="submit" class="lien-bouton">Désactiver</button>
+          </form>
+        </td>
+      </tr>
+      
+      <tr class="">
+        <td>Cavalier Bamiléké</td>
+        <td>Sculptures</td>
+        <td>26 500 FCFA</td>
+        <td class="stock-faible">2</td>
+        <td>Actif</td>
+        <td class="actions">
+          <a href="admin_produit_form.html">Modifier</a>
+          <form method="post" action="admin_produits.html" class="en-ligne">
+            <input type="hidden" name="csrf" value="9d49031d94c4a39bd7192099fe2e73ac">
+            <button type="submit" class="lien-bouton">Désactiver</button>
+          </form>
+        </td>
+      </tr>
+      
+      <tr class="">
+        <td>Chapeau en raphia</td>
+        <td>Sacs en raphia</td>
+        <td>4 500 FCFA</td>
+        <td class="stock-faible">4</td>
+        <td>Actif</td>
+        <td class="actions">
+          <a href="admin_produit_form.html">Modifier</a>
+          <form method="post" action="admin_produits.html" class="en-ligne">
+            <input type="hidden" name="csrf" value="9d49031d94c4a39bd7192099fe2e73ac">
+            <button type="submit" class="lien-bouton">Désactiver</button>
+          </form>
+        </td>
+      </tr>
+      
+      <tr class="">
+        <td>Collier Bamenda</td>
+        <td>Bijoux</td>
+        <td>11 000 FCFA</td>
+        <td class="stock-faible">3</td>
+        <td>Actif</td>
+        <td class="actions">
+          <a href="admin_produit_form.html">Modifier</a>
+          <form method="post" action="admin_produits.html" class="en-ligne">
+            <input type="hidden" name="csrf" value="9d49031d94c4a39bd7192099fe2e73ac">
+            <button type="submit" class="lien-bouton">Désactiver</button>
+          </form>
+        </td>
+      </tr>
+      
+      <tr class="">
+        <td>Collier de perles</td>
+        <td>Bijoux</td>
+        <td>9 000 FCFA</td>
+        <td class="stock-faible">2</td>
+        <td>Actif</td>
+        <td class="actions">
+          <a href="admin_produit_form.html">Modifier</a>
+          <form method="post" action="admin_produits.html" class="en-ligne">
+            <input type="hidden" name="csrf" value="9d49031d94c4a39bd7192099fe2e73ac">
+            <button type="submit" class="lien-bouton">Désactiver</button>
+          </form>
+        </td>
+      </tr>
+      
+      <tr class="">
+        <td>Corbeille tressée</td>
+        <td>Sacs en raphia</td>
+        <td>3 500 FCFA</td>
+        <td class="stock-faible">2</td>
+        <td>Actif</td>
+        <td class="actions">
+          <a href="admin_produit_form.html">Modifier</a>
+          <form method="post" action="admin_produits.html" class="en-ligne">
+            <input type="hidden" name="csrf" value="9d49031d94c4a39bd7192099fe2e73ac">
+            <button type="submit" class="lien-bouton">Désactiver</button>
+          </form>
+        </td>
+      </tr>
+      
+      <tr class="">
+        <td>Girafe en bois</td>
+        <td>Sculptures</td>
+        <td>12 000 FCFA</td>
+        <td class="">12</td>
+        <td>Actif</td>
+        <td class="actions">
+          <a href="admin_produit_form.html">Modifier</a>
+          <form method="post" action="admin_produits.html" class="en-ligne">
+            <input type="hidden" name="csrf" value="9d49031d94c4a39bd7192099fe2e73ac">
+            <button type="submit" class="lien-bouton">Désactiver</button>
+          </form>
+        </td>
+      </tr>
+      
+      <tr class="">
+        <td>Jeu d&#39;awalé</td>
+        <td>Décoration</td>
+        <td>16 500 FCFA</td>
+        <td class="stock-faible">4</td>
+        <td>Actif</td>
+        <td class="actions">
+          <a href="admin_produit_form.html">Modifier</a>
+          <form method="post" action="admin_produits.html" class="en-ligne">
+            <input type="hidden" name="csrf" value="9d49031d94c4a39bd7192099fe2e73ac">
+            <button type="submit" class="lien-bouton">Désactiver</button>
+          </form>
+        </td>
+      </tr>
+      
+      <tr class="">
+        <td>Lampe en raphia</td>
+        <td>Décoration</td>
+        <td>14 000 FCFA</td>
+        <td class="stock-faible">0</td>
+        <td>Actif</td>
+        <td class="actions">
+          <a href="admin_produit_form.html">Modifier</a>
+          <form method="post" action="admin_produits.html" class="en-ligne">
+            <input type="hidden" name="csrf" value="9d49031d94c4a39bd7192099fe2e73ac">
+            <button type="submit" class="lien-bouton">Désactiver</button>
+          </form>
+        </td>
+      </tr>
+      
+      <tr class="">
+        <td>Masque Bamiléké</td>
+        <td>Sculptures</td>
+        <td>33 500 FCFA</td>
+        <td class="">12</td>
+        <td>Actif</td>
+        <td class="actions">
+          <a href="admin_produit_form.html">Modifier</a>
+          <form method="post" action="admin_produits.html" class="en-ligne">
+            <input type="hidden" name="csrf" value="9d49031d94c4a39bd7192099fe2e73ac">
+            <button type="submit" class="lien-bouton">Désactiver</button>
+          </form>
+        </td>
+      </tr>
+      
+      <tr class="">
+        <td>Masque Bamoun</td>
+        <td>Sculptures</td>
+        <td>35 000 FCFA</td>
+        <td class="stock-faible">2</td>
+        <td>Actif</td>
+        <td class="actions">
+          <a href="admin_produit_form.html">Modifier</a>
+          <form method="post" action="admin_produits.html" class="en-ligne">
+            <input type="hidden" name="csrf" value="9d49031d94c4a39bd7192099fe2e73ac">
+            <button type="submit" class="lien-bouton">Désactiver</button>
+          </form>
+        </td>
+      </tr>
+      
+      <tr class="">
+        <td>Nappe brodée</td>
+        <td>Tissus</td>
+        <td>24 000 FCFA</td>
+        <td class="">30</td>
+        <td>Actif</td>
+        <td class="actions">
+          <a href="admin_produit_form.html">Modifier</a>
+          <form method="post" action="admin_produits.html" class="en-ligne">
+            <input type="hidden" name="csrf" value="9d49031d94c4a39bd7192099fe2e73ac">
+            <button type="submit" class="lien-bouton">Désactiver</button>
+          </form>
+        </td>
+      </tr>
+      
+      <tr class="">
+        <td>Pagne Ndop</td>
+        <td>Tissus</td>
+        <td>34 000 FCFA</td>
+        <td class="">8</td>
+        <td>Actif</td>
+        <td class="actions">
+          <a href="admin_produit_form.html">Modifier</a>
+          <form method="post" action="admin_produits.html" class="en-ligne">
+            <input type="hidden" name="csrf" value="9d49031d94c4a39bd7192099fe2e73ac">
+            <button type="submit" class="lien-bouton">Désactiver</button>
+          </form>
+        </td>
+      </tr>
+      
+      <tr class="">
+        <td>Panier de marché</td>
+        <td>Sacs en raphia</td>
+        <td>11 000 FCFA</td>
+        <td class="stock-faible">3</td>
+        <td>Actif</td>
+        <td class="actions">
+          <a href="admin_produit_form.html">Modifier</a>
+          <form method="post" action="admin_produits.html" class="en-ligne">
+            <input type="hidden" name="csrf" value="9d49031d94c4a39bd7192099fe2e73ac">
+            <button type="submit" class="lien-bouton">Désactiver</button>
+          </form>
+        </td>
+      </tr>
+      
+      <tr class="">
+        <td>Parure Bamoun</td>
+        <td>Bijoux</td>
+        <td>43 000 FCFA</td>
+        <td class="stock-faible">3</td>
+        <td>Actif</td>
+        <td class="actions">
+          <a href="admin_produit_form.html">Modifier</a>
+          <form method="post" action="admin_produits.html" class="en-ligne">
+            <input type="hidden" name="csrf" value="9d49031d94c4a39bd7192099fe2e73ac">
+            <button type="submit" class="lien-bouton">Désactiver</button>
+          </form>
+        </td>
+      </tr>
+      
+      <tr class="">
+        <td>Pendentif en ivoire végétal</td>
+        <td>Bijoux</td>
+        <td>10 500 FCFA</td>
+        <td class="stock-faible">4</td>
+        <td>Actif</td>
+        <td class="actions">
+          <a href="admin_produit_form.html">Modifier</a>
+          <form method="post" action="admin_produits.html" class="en-ligne">
+            <input type="hidden" name="csrf" value="9d49031d94c4a39bd7192099fe2e73ac">
+            <button type="submit" class="lien-bouton">Désactiver</button>
+          </form>
+        </td>
+      </tr>
+      
+      <tr class="">
+        <td>Plateau en bois</td>
+        <td>Décoration</td>
+        <td>11 500 FCFA</td>
+        <td class="stock-faible">0</td>
+        <td>Actif</td>
+        <td class="actions">
+          <a href="admin_produit_form.html">Modifier</a>
+          <form method="post" action="admin_produits.html" class="en-ligne">
+            <input type="hidden" name="csrf" value="9d49031d94c4a39bd7192099fe2e73ac">
+            <button type="submit" class="lien-bouton">Désactiver</button>
+          </form>
+        </td>
+      </tr>
+      
+      <tr class="">
+        <td>Pochette raphia brodée</td>
+        <td>Sacs en raphia</td>
+        <td>7 500 FCFA</td>
+        <td class="">8</td>
+        <td>Actif</td>
+        <td class="actions">
+          <a href="admin_produit_form.html">Modifier</a>
+          <form method="post" action="admin_produits.html" class="en-ligne">
+            <input type="hidden" name="csrf" value="9d49031d94c4a39bd7192099fe2e73ac">
+            <button type="submit" class="lien-bouton">Désactiver</button>
+          </form>
+        </td>
+      </tr>
+      
+      <tr class="">
+        <td>Porte-clés sculpté</td>
+        <td>Sculptures</td>
+        <td>2 000 FCFA</td>
+        <td class="stock-faible">0</td>
+        <td>Actif</td>
+        <td class="actions">
+          <a href="admin_produit_form.html">Modifier</a>
+          <form method="post" action="admin_produits.html" class="en-ligne">
+            <input type="hidden" name="csrf" value="9d49031d94c4a39bd7192099fe2e73ac">
+            <button type="submit" class="lien-bouton">Désactiver</button>
+          </form>
+        </td>
+      </tr>
+      
+      <tr class="">
+        <td>Pot à épices</td>
+        <td>Décoration</td>
+        <td>4 500 FCFA</td>
+        <td class="">20</td>
+        <td>Actif</td>
+        <td class="actions">
+          <a href="admin_produit_form.html">Modifier</a>
+          <form method="post" action="admin_produits.html" class="en-ligne">
+            <input type="hidden" name="csrf" value="9d49031d94c4a39bd7192099fe2e73ac">
+            <button type="submit" class="lien-bouton">Désactiver</button>
+          </form>
+        </td>
+      </tr>
+      
+      <tr class="">
+        <td>Sac bandoulière</td>
+        <td>Sacs en raphia</td>
+        <td>19 000 FCFA</td>
+        <td class="">30</td>
+        <td>Actif</td>
+        <td class="actions">
+          <a href="admin_produit_form.html">Modifier</a>
+          <form method="post" action="admin_produits.html" class="en-ligne">
+            <input type="hidden" name="csrf" value="9d49031d94c4a39bd7192099fe2e73ac">
+            <button type="submit" class="lien-bouton">Désactiver</button>
+          </form>
+        </td>
+      </tr>
+      
+      <tr class="">
+        <td>Sac cabas en raphia</td>
+        <td>Sacs en raphia</td>
+        <td>11 000 FCFA</td>
+        <td class="">20</td>
+        <td>Actif</td>
+        <td class="actions">
+          <a href="admin_produit_form.html">Modifier</a>
+          <form method="post" action="admin_produits.html" class="en-ligne">
+            <input type="hidden" name="csrf" value="9d49031d94c4a39bd7192099fe2e73ac">
+            <button type="submit" class="lien-bouton">Désactiver</button>
+          </form>
+        </td>
+      </tr>
+      
+      <tr class="">
+        <td>Sac à dos raphia</td>
+        <td>Sacs en raphia</td>
+        <td>18 500 FCFA</td>
+        <td class="">12</td>
+        <td>Actif</td>
+        <td class="actions">
+          <a href="admin_produit_form.html">Modifier</a>
+          <form method="post" action="admin_produits.html" class="en-ligne">
+            <input type="hidden" name="csrf" value="9d49031d94c4a39bd7192099fe2e73ac">
+            <button type="submit" class="lien-bouton">Désactiver</button>
+          </form>
+        </td>
+      </tr>
+      
+      <tr class="">
+        <td>Statuette de la fertilité</td>
+        <td>Sculptures</td>
+        <td>20 500 FCFA</td>
+        <td class="stock-faible">4</td>
+        <td>Actif</td>
+        <td class="actions">
+          <a href="admin_produit_form.html">Modifier</a>
+          <form method="post" action="admin_produits.html" class="en-ligne">
+            <input type="hidden" name="csrf" value="9d49031d94c4a39bd7192099fe2e73ac">
+            <button type="submit" class="lien-bouton">Désactiver</button>
+          </form>
+        </td>
+      </tr>
+      
+      <tr class="">
+        <td>Tabouret royal sculpté</td>
+        <td>Sculptures</td>
+        <td>43 500 FCFA</td>
+        <td class="stock-faible">2</td>
+        <td>Actif</td>
+        <td class="actions">
+          <a href="admin_produit_form.html">Modifier</a>
+          <form method="post" action="admin_produits.html" class="en-ligne">
+            <input type="hidden" name="csrf" value="9d49031d94c4a39bd7192099fe2e73ac">
+            <button type="submit" class="lien-bouton">Désactiver</button>
+          </form>
+        </td>
+      </tr>
+      
+      <tr class="">
+        <td>Tambour décoratif</td>
+        <td>Décoration</td>
+        <td>22 500 FCFA</td>
+        <td class="stock-faible">3</td>
+        <td>Actif</td>
+        <td class="actions">
+          <a href="admin_produit_form.html">Modifier</a>
+          <form method="post" action="admin_produits.html" class="en-ligne">
+            <input type="hidden" name="csrf" value="9d49031d94c4a39bd7192099fe2e73ac">
+            <button type="submit" class="lien-bouton">Désactiver</button>
+          </form>
+        </td>
+      </tr>
+      
+      <tr class="">
+        <td>Tapis tressé</td>
+        <td>Décoration</td>
+        <td>18 000 FCFA</td>
+        <td class="">30</td>
+        <td>Actif</td>
+        <td class="actions">
+          <a href="admin_produit_form.html">Modifier</a>
+          <form method="post" action="admin_produits.html" class="en-ligne">
+            <input type="hidden" name="csrf" value="9d49031d94c4a39bd7192099fe2e73ac">
+            <button type="submit" class="lien-bouton">Désactiver</button>
+          </form>
+        </td>
+      </tr>
+      
+      <tr class="">
+        <td>Tissu bogolan</td>
+        <td>Tissus</td>
+        <td>20 500 FCFA</td>
+        <td class="">30</td>
+        <td>Actif</td>
+        <td class="actions">
+          <a href="admin_produit_form.html">Modifier</a>
+          <form method="post" action="admin_produits.html" class="en-ligne">
+            <input type="hidden" name="csrf" value="9d49031d94c4a39bd7192099fe2e73ac">
+            <button type="submit" class="lien-bouton">Désactiver</button>
+          </form>
+        </td>
+      </tr>
+      
+      <tr class="">
+        <td>Tissu wax 6 yards</td>
+        <td>Tissus</td>
+        <td>21 500 FCFA</td>
+        <td class="">12</td>
+        <td>Actif</td>
+        <td class="actions">
+          <a href="admin_produit_form.html">Modifier</a>
+          <form method="post" action="admin_produits.html" class="en-ligne">
+            <input type="hidden" name="csrf" value="9d49031d94c4a39bd7192099fe2e73ac">
+            <button type="submit" class="lien-bouton">Désactiver</button>
+          </form>
+        </td>
+      </tr>
+      
+      <tr class="">
+        <td>Toghu brodé</td>
+        <td>Tissus</td>
+        <td>31 000 FCFA</td>
+        <td class="">12</td>
+        <td>Actif</td>
+        <td class="actions">
+          <a href="admin_produit_form.html">Modifier</a>
+          <form method="post" action="admin_produits.html" class="en-ligne">
+            <input type="hidden" name="csrf" value="9d49031d94c4a39bd7192099fe2e73ac">
+            <button type="submit" class="lien-bouton">Désactiver</button>
+          </form>
+        </td>
+      </tr>
+      
+      <tr class="">
+        <td>Vase en poterie</td>
+        <td>Décoration</td>
+        <td>11 000 FCFA</td>
+        <td class="stock-faible">2</td>
+        <td>Actif</td>
+        <td class="actions">
+          <a href="admin_produit_form.html">Modifier</a>
+          <form method="post" action="admin_produits.html" class="en-ligne">
+            <input type="hidden" name="csrf" value="9d49031d94c4a39bd7192099fe2e73ac">
+            <button type="submit" class="lien-bouton">Désactiver</button>
+          </form>
+        </td>
+      </tr>
+      
+      <tr class="">
+        <td>Écharpe tissée</td>
+        <td>Tissus</td>
+        <td>5 500 FCFA</td>
+        <td class="">20</td>
+        <td>Actif</td>
+        <td class="actions">
+          <a href="admin_produit_form.html">Modifier</a>
+          <form method="post" action="admin_produits.html" class="en-ligne">
+            <input type="hidden" name="csrf" value="9d49031d94c4a39bd7192099fe2e73ac">
+            <button type="submit" class="lien-bouton">Désactiver</button>
+          </form>
+        </td>
+      </tr>
+      
+      <tr class="">
+        <td>Éléphant en bois d&#39;ébène</td>
+        <td>Sculptures</td>
+        <td>23 500 FCFA</td>
+        <td class="">20</td>
+        <td>Actif</td>
+        <td class="actions">
+          <a href="admin_produit_form.html">Modifier</a>
+          <form method="post" action="admin_produits.html" class="en-ligne">
+            <input type="hidden" name="csrf" value="9d49031d94c4a39bd7192099fe2e73ac">
+            <button type="submit" class="lien-bouton">Désactiver</button>
+          </form>
+        </td>
+      </tr>
+      
+      <tr class="inactif">
+        <td>Bracelet de perles</td>
+        <td>Bijoux</td>
+        <td>2 000 FCFA</td>
+        <td class="stock-faible">2</td>
+        <td>Désactivé</td>
+        <td class="actions">
+          <a href="admin_produit_form.html">Modifier</a>
+          <form method="post" action="admin_produits.html" class="en-ligne">
+            <input type="hidden" name="csrf" value="9d49031d94c4a39bd7192099fe2e73ac">
+            <button type="submit" class="lien-bouton">Réactiver</button>
+          </form>
+        </td>
+      </tr>
+      
+    </tbody>
+  </table>
+</div>
+</div>
+
+  </main>
+
+  <footer class="pied">
+    <div class="conteneur pied-grille">
+      <div>
+        <p class="pied-titre">Mains de l'Ouest</p>
+        <p>Une coopérative d'artisans de Foumban et de Bamenda. Sculpture sur bois, raphia, tissage et bijoux.</p>
+      </div>
+      <div>
+        <p class="pied-titre">Commander</p>
+        <p>Paiement à la livraison ou par mobile money.</p>
+        <p><a href="catalogue.html">Parcourir le catalogue</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden>
+    <span id="toast-texte"></span>
+    <a href="panier.html">Voir le panier</a>
+  </div>
+
+  <script src="static/js/panier.js"></script>
+  
+</body>
+</html>

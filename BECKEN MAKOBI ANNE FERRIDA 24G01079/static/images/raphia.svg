@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" role="img" aria-label="Sac tressé en raphia">
+  <rect width="600" height="450" fill="#24357A"/>
+  
+  <path d="M0 360 H600 V450 H0Z" fill="#16224A"/>
+  <path d="M200 170 C200 70 400 70 400 170" fill="none" stroke="#7A4A22" stroke-width="16" stroke-linecap="round"/>
+  <path d="M150 170 H450 L490 380 Q490 400 470 400 H130 Q110 400 110 380Z" fill="#CDAA6B"/>
+  <g stroke="#9C7A3F" stroke-width="5" fill="none">
+    <path d="M140 220 H460"/><path d="M132 270 H468"/><path d="M125 320 H475"/><path d="M118 365 H482"/>
+    <path d="M200 170 L180 400"/><path d="M250 170 L240 400"/><path d="M300 170 V400"/><path d="M350 170 L360 400"/><path d="M400 170 L420 400"/>
+  </g>
+  <path d="M150 170 H450 L458 212 H142Z" fill="#B7242D"/>
+  <g fill="#F4F6F8"><path d="M200 191 l12 -10 l12 10 l-12 10z"/><path d="M288 191 l12 -10 l12 10 l-12 10z"/><path d="M376 191 l12 -10 l12 10 l-12 10z"/></g>
+</svg>

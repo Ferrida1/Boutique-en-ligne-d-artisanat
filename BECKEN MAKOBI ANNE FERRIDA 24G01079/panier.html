@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sculptures, sacs en raphia, tissus et bijoux faits main par les artisans de Foumban et de Bamenda.">
+  <title>Panier – Mains de l'Ouest</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Instrument+Sans:wght@400;600&display=swap">
+  <link rel="stylesheet" href="static/css/style.css">
+  <link rel="icon" href="static/images/motif.svg" type="image/svg+xml">
+</head>
+<body>
+  <a class="lien-evitement" href="#contenu">Aller au contenu</a>
+  <header class="entete">
+    <div class="conteneur entete-grille">
+      <a class="marque" href="index.html">
+        <img src="static/images/motif.svg" alt="" width="34" height="34">
+        <span>Mains de l'Ouest</span>
+      </a>
+      <form class="recherche" role="search" method="get" action="catalogue.html">
+        <label class="sr-only" for="recherche-q">Rechercher un produit</label>
+        <input type="search" id="recherche-q" name="q" placeholder="Rechercher un masque, un sac, un pagne…" value="">
+        <button type="submit" class="recherche-bouton">Rechercher</button>
+      </form>
+      <a class="panier-lien" href="panier.html" aria-label="Voir le panier">
+        <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M3 4h2.5l2.2 10.5h9.6L19.5 7H7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9.5" cy="19" r="1.5" fill="currentColor"/><circle cx="16.5" cy="19" r="1.5" fill="currentColor"/></svg>
+        <span class="panier-compteur" id="compteur-panier">0</span>
+      </a>
+      <nav class="navigation" aria-label="Navigation principale">
+        <ul>
+          <li><a href="index.html" >Accueil</a></li>
+          <li><a href="catalogue.html" >Catalogue</a></li>
+          
+          <li><a href="admin_tableau.html">Administration</a></li>
+          
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  
+    
+  
+
+  <main id="contenu">
+    
+<div class="conteneur bloc">
+  <h1 class="titre-page">Votre panier</h1>
+
+  <div id="panier-vide" class="vide" hidden>
+    <p><strong>Votre panier est vide.</strong></p>
+    <p>Ajoutez une pièce depuis le catalogue pour commencer.</p>
+    <p><a class="bouton" href="catalogue.html">Parcourir le catalogue</a></p>
+  </div>
+
+  <div id="panier-contenu" class="panier-disposition" hidden>
+    <section aria-labelledby="titre-articles">
+      <h2 id="titre-articles" class="sr-only">Articles</h2>
+      <div class="tableau-defilant tableau-panier">
+        <table>
+          <thead>
+            <tr><th scope="col">Produit</th><th scope="col">Prix</th><th scope="col">Quantité</th><th scope="col">Sous-total</th><th scope="col"><span class="sr-only">Retirer</span></th></tr>
+          </thead>
+          <tbody id="lignes-panier"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="recapitulatif" aria-labelledby="titre-validation">
+      <h2 id="titre-validation">Valider la commande</h2>
+      <p class="recap-total">Total estimé <strong id="total-panier">0 FCFA</strong></p>
+      <p class="aide">Le serveur recalcule le total avec les prix officiels au moment de la validation.</p>
+      <form id="form-commande" method="post" action="panier.html" novalidate>
+        <input type="hidden" name="csrf" value="9d49031d94c4a39bd7192099fe2e73ac">
+        <input type="hidden" name="panier" id="champ-panier" value="{}">
+        <div class="champ">
+          <label for="nom">Nom complet</label>
+          <input type="text" id="nom" name="nom" required minlength="3" maxlength="80" autocomplete="name">
+          <p class="erreur-champ" id="err-nom" role="alert"></p>
+        </div>
+        <div class="champ">
+          <label for="telephone">Téléphone (9 chiffres, commence par 6)</label>
+          <input type="tel" id="telephone" name="telephone" required inputmode="numeric" autocomplete="tel" placeholder="6XXXXXXXX">
+          <p class="erreur-champ" id="err-telephone" role="alert"></p>
+        </div>
+        <div class="champ">
+          <label for="adresse">Adresse de livraison</label>
+          <input type="text" id="adresse" name="adresse" required minlength="5" maxlength="200" autocomplete="street-address">
+          <p class="erreur-champ" id="err-adresse" role="alert"></p>
+        </div>
+        <fieldset class="champ">
+          <legend>Mode de paiement</legend>
+          <label class="radio"><input type="radio" name="mode_paiement" value="livraison" checked> Paiement à la livraison</label>
+          <label class="radio"><input type="radio" name="mode_paiement" value="mobile_money"> Mobile money</label>
+        </fieldset>
+        <button class="bouton bouton-grand bouton-plein" type="submit">Confirmer la commande</button>
+      </form>
+    </section>
+  </div>
+</div>
+
+  </main>
+
+  <footer class="pied">
+    <div class="conteneur pied-grille">
+      <div>
+        <p class="pied-titre">Mains de l'Ouest</p>
+        <p>Une coopérative d'artisans de Foumban et de Bamenda. Sculpture sur bois, raphia, tissage et bijoux.</p>
+      </div>
+      <div>
+        <p class="pied-titre">Commander</p>
+        <p>Paiement à la livraison ou par mobile money.</p>
+        <p><a href="catalogue.html">Parcourir le catalogue</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden>
+    <span id="toast-texte"></span>
+    <a href="panier.html">Voir le panier</a>
+  </div>
+
+  <script src="static/js/panier.js"></script>
+  <script src="static/js/commande.js"></script>
+</body>
+</html>

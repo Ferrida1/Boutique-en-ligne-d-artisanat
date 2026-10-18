@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" role="img" aria-label="Collier de perles">
+  <rect width="600" height="450" fill="#16224A"/>
+  <g>
+    <circle cx="110" cy="80" r="15" fill="#D9A021"/><circle cx="140" cy="125" r="15" fill="#B7242D"/><circle cx="174" cy="165" r="15" fill="#F4F6F8"/>
+    <circle cx="214" cy="200" r="15" fill="#D9A021"/><circle cx="258" cy="228" r="15" fill="#B7242D"/><circle cx="306" cy="240" r="15" fill="#F4F6F8"/>
+    <circle cx="354" cy="228" r="15" fill="#D9A021"/><circle cx="398" cy="200" r="15" fill="#B7242D"/><circle cx="438" cy="165" r="15" fill="#F4F6F8"/>
+    <circle cx="472" cy="125" r="15" fill="#D9A021"/><circle cx="502" cy="80" r="15" fill="#B7242D"/>
+  </g>
+  <path d="M306 262 L338 306 L306 350 L274 306Z" fill="#D9A021"/>
+  <path d="M306 282 L322 306 L306 330 L290 306Z" fill="#16224A"/>
+  <circle cx="306" cy="306" r="6" fill="#F4F6F8"/>
+</svg>

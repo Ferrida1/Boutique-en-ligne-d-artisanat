@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sculptures, sacs en raphia, tissus et bijoux faits main par les artisans de Foumban et de Bamenda.">
+  <title>Catalogue – Mains de l'Ouest</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Instrument+Sans:wght@400;600&display=swap">
+  <link rel="stylesheet" href="static/css/style.css">
+  <link rel="icon" href="static/images/motif.svg" type="image/svg+xml">
+</head>
+<body>
+  <a class="lien-evitement" href="#contenu">Aller au contenu</a>
+  <header class="entete">
+    <div class="conteneur entete-grille">
+      <a class="marque" href="index.html">
+        <img src="static/images/motif.svg" alt="" width="34" height="34">
+        <span>Mains de l'Ouest</span>
+      </a>
+      <form class="recherche" role="search" method="get" action="catalogue.html">
+        <label class="sr-only" for="recherche-q">Rechercher un produit</label>
+        <input type="search" id="recherche-q" name="q" placeholder="Rechercher un masque, un sac, un pagne…" value="">
+        <button type="submit" class="recherche-bouton">Rechercher</button>
+      </form>
+      <a class="panier-lien" href="panier.html" aria-label="Voir le panier">
+        <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M3 4h2.5l2.2 10.5h9.6L19.5 7H7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9.5" cy="19" r="1.5" fill="currentColor"/><circle cx="16.5" cy="19" r="1.5" fill="currentColor"/></svg>
+        <span class="panier-compteur" id="compteur-panier">0</span>
+      </a>
+      <nav class="navigation" aria-label="Navigation principale">
+        <ul>
+          <li><a href="index.html" >Accueil</a></li>
+          <li><a href="catalogue.html" aria-current="page">Catalogue</a></li>
+          
+          <li><a href="admin_tableau.html">Administration</a></li>
+          
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  
+    
+  
+
+  <main id="contenu">
+    
+<div class="conteneur bloc">
+  <h1 class="titre-page">Catalogue</h1>
+  <div class="catalogue-disposition">
+    <aside aria-label="Catégories">
+      <ul class="categories-liste">
+        <li><a href="catalogue.html" aria-current="true">Tout <span>39</span></a></li>
+        
+        <li><a href="catalogue.html" >Bijoux <span>7</span></a></li>
+        
+        <li><a href="catalogue.html" >Décoration <span>10</span></a></li>
+        
+        <li><a href="catalogue.html" >Sacs en raphia <span>7</span></a></li>
+        
+        <li><a href="catalogue.html" >Sculptures <span>8</span></a></li>
+        
+        <li><a href="catalogue.html" >Tissus <span>7</span></a></li>
+        
+      </ul>
+    </aside>
+
+    <div>
+      <form class="barre-outils" method="get" action="catalogue.html">
+        
+        <div class="champ">
+          <label for="q">Recherche</label>
+          <input type="search" id="q" name="q" value="" placeholder="Masque, raphia, Njoya…">
+        </div>
+        <div class="champ">
+          <label for="tri">Trier par</label>
+          <select id="tri" name="tri">
+            <option value="">Nom</option>
+            <option value="prix_asc" >Prix croissant</option>
+            <option value="prix_desc" >Prix décroissant</option>
+          </select>
+        </div>
+        <button class="bouton" type="submit">Appliquer</button>
+      </form>
+
+      <p class="compte-resultats">39 produits</p>
+      
+      <div class="grille-produits grille-produits-catalogue">
+        <article class="carte">
+  <a class="carte-image" href="produit.html" tabindex="-1" aria-hidden="true">
+    <img src="static/images/bijou.svg" alt="" width="600" height="450" loading="lazy">
+    
+  </a>
+  <div class="carte-corps">
+    <h3><a href="produit.html">Bague en bronze</a></h3>
+    <p class="carte-artisan">Atelier Tchoupo</p>
+    <div class="carte-pied">
+      <p class="prix">7 000 FCFA</p>
+      
+      <button type="button" class="bouton bouton-petit" data-ajout="22" aria-label="Ajouter Bague en bronze au panier">Ajouter</button>
+      
+    </div>
+  </div>
+</article><article class="carte">
+  <a class="carte-image" href="produit.html" tabindex="-1" aria-hidden="true">
+    <img src="static/images/deco.svg" alt="" width="600" height="450" loading="lazy">
+    
+  </a>
+  <div class="carte-corps">
+    <h3><a href="produit.html">Bol sculpté</a></h3>
+    <p class="carte-artisan">Atelier Njoya</p>
+    <div class="carte-pied">
+      <p class="prix">6 000 FCFA</p>
+      
+      <button type="button" class="bouton bouton-petit" data-ajout="32" aria-label="Ajouter Bol sculpté au panier">Ajouter</button>
+      
+    </div>
+  </div>
+</article><article class="carte">
+  <a class="carte-image" href="produit.html" tabindex="-1" aria-hidden="true">
+    <img src="static/images/tissu.svg" alt="" width="600" height="450" loading="lazy">
+    
+  </a>
+  <div class="carte-corps">
+    <h3><a href="produit.html">Boubou brodé</a></h3>
+    <p class="carte-artisan">Artisans de Foumban</p>
+    <div class="carte-pied">
+      <p class="prix">65 000 FCFA</p>
+      
+      <button type="button" class="bouton bouton-petit" data-ajout="17" aria-label="Ajouter Boubou brodé au panier">Ajouter</button>
+      
+    </div>
+  </div>
+</article><article class="carte">
+  <a class="carte-image" href="produit.html" tabindex="-1" aria-hidden="true">
+    <img src="static/images/bijou.svg" alt="" width="600" height="450" loading="lazy">
+    <span class="pastille pastille-rare">Plus que 4</span>
+  </a>
+  <div class="carte-corps">
+    <h3><a href="produit.html">Boucles d&#39;oreilles perlées</a></h3>
+    <p class="carte-artisan">Atelier Njoya</p>
+    <div class="carte-pied">
+      <p class="prix">3 000 FCFA</p>
+      
+      <button type="button" class="bouton bouton-petit" data-ajout="21" aria-label="Ajouter Boucles d&#39;oreilles perlées au panier">Ajouter</button>
+      
+    </div>
+  </div>
+</article><article class="carte">
+  <a class="carte-image" href="produit.html" tabindex="-1" aria-hidden="true">
+    <img src="static/images/bijou.svg" alt="" width="600" height="450" loading="lazy">
+    <span class="pastille pastille-rare">Plus que 4</span>
+  </a>
+  <div class="carte-corps">
+    <h3><a href="produit.html">Bracelet en laiton</a></h3>
+    <p class="carte-artisan">Mama Rose</p>
+    <div class="carte-pied">
+      <p class="prix">8 000 FCFA</p>
+      
+      <button type="button" class="bouton bouton-petit" data-ajout="20" aria-label="Ajouter Bracelet en laiton au panier">Ajouter</button>
+      
+    </div>
+  </div>
+</article><article class="carte">
+  <a class="carte-image" href="produit.html" tabindex="-1" aria-hidden="true">
+    <img src="static/images/deco.svg" alt="" width="600" height="450" loading="lazy">
+    
+  </a>
+  <div class="carte-corps">
+    <h3><a href="produit.html">Cadre en bois sculpté</a></h3>
+    <p class="carte-artisan">Artisans de Foumban</p>
+    <div class="carte-pied">
+      <p class="prix">12 000 FCFA</p>
+      
+      <button type="button" class="bouton bouton-petit" data-ajout="28" aria-label="Ajouter Cadre en bois sculpté au panier">Ajouter</button>
+      
+    </div>
+  </div>
+</article><article class="carte">
+  <a class="carte-image" href="produit.html" tabindex="-1" aria-hidden="true">
+    <img src="static/images/deco.svg" alt="" width="600" height="450" loading="lazy">
+    <span class="pastille pastille-rare">Plus que 3</span>
+  </a>
+  <div class="carte-corps">
+    <h3><a href="produit.html">Calebasse décorée</a></h3>
+    <p class="carte-artisan">Maison Ngoufo</p>
+    <div class="carte-pied">
+      <p class="prix">9 000 FCFA</p>
+      
+      <button type="button" class="bouton bouton-petit" data-ajout="26" aria-label="Ajouter Calebasse décorée au panier">Ajouter</button>
+      
+    </div>
+  </div>
+</article><article class="carte">
+  <a class="carte-image" href="produit.html" tabindex="-1" aria-hidden="true">
+    <img src="static/images/sculpture.svg" alt="" width="600" height="450" loading="lazy">
+    <span class="pastille pastille-rare">Plus que 2</span>
+  </a>
+  <div class="carte-corps">
+    <h3><a href="produit.html">Cavalier Bamiléké</a></h3>
+    <p class="carte-artisan">Coopérative de Bamenda</p>
+    <div class="carte-pied">
+      <p class="prix">26 500 FCFA</p>
+      
+      <button type="button" class="bouton bouton-petit" data-ajout="5" aria-label="Ajouter Cavalier Bamiléké au panier">Ajouter</button>
+      
+    </div>
+  </div>
+</article><article class="carte">
+  <a class="carte-image" href="produit.html" tabindex="-1" aria-hidden="true">
+    <img src="static/images/raphia.svg" alt="" width="600" height="450" loading="lazy">
+    <span class="pastille pastille-rare">Plus que 4</span>
+  </a>
+  <div class="carte-corps">
+    <h3><a href="produit.html">Chapeau en raphia</a></h3>
+    <p class="carte-artisan">Mama Rose</p>
+    <div class="carte-pied">
+      <p class="prix">4 500 FCFA</p>
+      
+      <button type="button" class="bouton bouton-petit" data-ajout="11" aria-label="Ajouter Chapeau en raphia au panier">Ajouter</button>
+      
+    </div>
+  </div>
+</article><article class="carte">
+  <a class="carte-image" href="produit.html" tabindex="-1" aria-hidden="true">
+    <img src="static/images/bijou.svg" alt="" width="600" height="450" loading="lazy">
+    <span class="pastille pastille-rare">Plus que 3</span>
+  </a>
+  <div class="carte-corps">
+    <h3><a href="produit.html">Collier Bamenda</a></h3>
+    <p class="carte-artisan">Coopérative de Bamenda</p>
+    <div class="carte-pied">
+      <p class="prix">11 000 FCFA</p>
+      
+      <button type="button" class="bouton bouton-petit" data-ajout="36" aria-label="Ajouter Collier Bamenda au panier">Ajouter</button>
+      
+    </div>
+  </div>
+</article><article class="carte">
+  <a class="carte-image" href="produit.html" tabindex="-1" aria-hidden="true">
+    <img src="static/images/bijou.svg" alt="" width="600" height="450" loading="lazy">
+    <span class="pastille pastille-rare">Plus que 2</span>
+  </a>
+  <div class="carte-corps">
+    <h3><a href="produit.html">Collier de perles</a></h3>
+    <p class="carte-artisan">Atelier Njoya</p>
+    <div class="carte-pied">
+      <p class="prix">9 000 FCFA</p>
+      
+      <button type="button" class="bouton bouton-petit" data-ajout="19" aria-label="Ajouter Collier de perles au panier">Ajouter</button>
+      
+    </div>
+  </div>
+</article><article class="carte">
+  <a class="carte-image" href="produit.html" tabindex="-1" aria-hidden="true">
+    <img src="static/images/raphia.svg" alt="" width="600" height="450" loading="lazy">
+    <span class="pastille pastille-rare">Plus que 2</span>
+  </a>
+  <div class="carte-corps">
+    <h3><a href="produit.html">Corbeille tressée</a></h3>
+    <p class="carte-artisan">Atelier Tchoupo</p>
+    <div class="carte-pied">
+      <p class="prix">3 500 FCFA</p>
+      
+      <button type="button" class="bouton bouton-petit" data-ajout="12" aria-label="Ajouter Corbeille tressée au panier">Ajouter</button>
+      
+    </div>
+  </div>
+</article><article class="carte">
+  <a class="carte-image" href="produit.html" tabindex="-1" aria-hidden="true">
+    <img src="static/images/sculpture.svg" alt="" width="600" height="450" loading="lazy">
+    
+  </a>
+  <div class="carte-corps">
+    <h3><a href="produit.html">Girafe en bois</a></h3>
+    <p class="carte-artisan">Coopérative de Bamenda</p>
+    <div class="carte-pied">
+      <p class="prix">12 000 FCFA</p>
+      
+      <button type="button" class="bouton bouton-petit" data-ajout="38" aria-label="Ajouter Girafe en bois au panier">Ajouter</button>
+      
+    </div>
+  </div>
+</article><article class="carte">
+  <a class="carte-image" href="produit.html" tabindex="-1" aria-hidden="true">
+    <img src="static/images/deco.svg" alt="" width="600" height="450" loading="lazy">
+    <span class="pastille pastille-rare">Plus que 4</span>
+  </a>
+  <div class="carte-corps">
+    <h3><a href="produit.html">Jeu d&#39;awalé</a></h3>
+    <p class="carte-artisan">Artisans de Foumban</p>
+    <div class="carte-pied">
+      <p class="prix">16 500 FCFA</p>
+      
+      <button type="button" class="bouton bouton-petit" data-ajout="29" aria-label="Ajouter Jeu d&#39;awalé au panier">Ajouter</button>
+      
+    </div>
+  </div>
+</article><article class="carte">
+  <a class="carte-image" href="produit.html" tabindex="-1" aria-hidden="true">
+    <img src="static/images/deco.svg" alt="" width="600" height="450" loading="lazy">
+    <span class="pastille pastille-vide">Épuisé</span>
+    
+  </a>
+  <div class="carte-corps">
+    <h3><a href="produit.html">Lampe en raphia</a></h3>
+    <p class="carte-artisan">Coopérative de Bamenda</p>
+    <div class="carte-pied">
+      <p class="prix">14 000 FCFA</p>
+      
+    </div>
+  </div>
+</article><article class="carte">
+  <a class="carte-image" href="produit.html" tabindex="-1" aria-hidden="true">
+    <img src="static/images/sculpture.svg" alt="" width="600" height="450" loading="lazy">
+    
+  </a>
+  <div class="carte-corps">
+    <h3><a href="produit.html">Masque Bamiléké</a></h3>
+    <p class="carte-artisan">Coopérative de Bamenda</p>
+    <div class="carte-pied">
+      <p class="prix">33 500 FCFA</p>
+      
+      <button type="button" class="bouton bouton-petit" data-ajout="33" aria-label="Ajouter Masque Bamiléké au panier">Ajouter</button>
+      
+    </div>
+  </div>
+</article><article class="carte">
+  <a class="carte-image" href="produit.html" tabindex="-1" aria-hidden="true">
+    <img src="static/images/sculpture.svg" alt="" width="600" height="450" loading="lazy">
+    <span class="pastille pastille-rare">Plus que 2</span>
+  </a>
+  <div class="carte-corps">
+    <h3><a href="produit.html">Masque Bamoun</a></h3>
+    <p class="carte-artisan">Atelier Njoya</p>
+    <div class="carte-pied">
+      <p class="prix">35 000 FCFA</p>
+      
+      <button type="button" class="bouton bouton-petit" data-ajout="1" aria-label="Ajouter Masque Bamoun au panier">Ajouter</button>
+      
+    </div>
+  </div>
+</article><article class="carte">
+  <a class="carte-image" href="produit.html" tabindex="-1" aria-hidden="true">
+    <img src="static/images/tissu.svg" alt="" width="600" height="450" loading="lazy">
+    
+  </a>
+  <div class="carte-corps">
+    <h3><a href="produit.html">Nappe brodée</a></h3>
+    <p class="carte-artisan">Coopérative de Bamenda</p>
+    <div class="carte-pied">
+      <p class="prix">24 000 FCFA</p>
+      
+      <button type="button" class="bouton bouton-petit" data-ajout="35" aria-label="Ajouter Nappe brodée au panier">Ajouter</button>
+      
+    </div>
+  </div>
+</article><article class="carte">
+  <a class="carte-image" href="produit.html" tabindex="-1" aria-hidden="true">
+    <img src="static/images/tissu.svg" alt="" width="600" height="450" loading="lazy">
+    
+  </a>
+  <div class="carte-corps">
+    <h3><a href="produit.html">Pagne Ndop</a></h3>
+    <p class="carte-artisan">Atelier Njoya</p>
+    <div class="carte-pied">
+      <p class="prix">34 000 FCFA</p>
+      
+      <button type="button" class="bouton bouton-petit" data-ajout="14" aria-label="Ajouter Pagne Ndop au panier">Ajouter</button>
+      
+    </div>
+  </div>
+</article><article class="carte">
+  <a class="carte-image" href="produit.html" tabindex="-1" aria-hidden="true">
+    <img src="static/images/raphia.svg" alt="" width="600" height="450" loading="lazy">
+    <span class="pastille pastille-rare">Plus que 3</span>
+  </a>
+  <div class="carte-corps">
+    <h3><a href="produit.html">Panier de marché</a></h3>
+    <p class="carte-artisan">Artisans de Foumban</p>
+    <div class="carte-pied">
+      <p class="prix">11 000 FCFA</p>
+      
+      <button type="button" class="bouton bouton-petit" data-ajout="9" aria-label="Ajouter Panier de marché au panier">Ajouter</button>
+      
+    </div>
+  </div>
+</article><article class="carte">
+  <a class="carte-image" href="produit.html" tabindex="-1" aria-hidden="true">
+    <img src="static/images/bijou.svg" alt="" width="600" height="450" loading="lazy">
+    <span class="pastille pastille-rare">Plus que 3</span>
+  </a>
+  <div class="carte-corps">
+    <h3><a href="produit.html">Parure Bamoun</a></h3>
+    <p class="carte-artisan">Mama Rose</p>
+    <div class="carte-pied">
+      <p class="prix">43 000 FCFA</p>
+      
+      <button type="button" class="bouton bouton-petit" data-ajout="23" aria-label="Ajouter Parure Bamoun au panier">Ajouter</button>
+      
+    </div>
+  </div>
+</article><article class="carte">
+  <a class="carte-image" href="produit.html" tabindex="-1" aria-hidden="true">
+    <img src="static/images/bijou.svg" alt="" width="600" height="450" loading="lazy">
+    <span class="pastille pastille-rare">Plus que 4</span>
+  </a>
+  <div class="carte-corps">
+    <h3><a href="produit.html">Pendentif en ivoire végétal</a></h3>
+    <p class="carte-artisan">Artisans de Foumban</p>
+    <div class="carte-pied">
+      <p class="prix">10 500 FCFA</p>
+      
+      <button type="button" class="bouton bouton-petit" data-ajout="24" aria-label="Ajouter Pendentif en ivoire végétal au panier">Ajouter</button>
+      
+    </div>
+  </div>
+</article><article class="carte">
+  <a class="carte-image" href="produit.html" tabindex="-1" aria-hidden="true">
+    <img src="static/images/deco.svg" alt="" width="600" height="450" loading="lazy">
+    <span class="pastille pastille-vide">Épuisé</span>
+    
+  </a>
+  <div class="carte-corps">
+    <h3><a href="produit.html">Plateau en bois</a></h3>
+    <p class="carte-artisan">Mama Rose</p>
+    <div class="carte-pied">
+      <p class="prix">11 500 FCFA</p>
+      
+    </div>
+  </div>
+</article><article class="carte">
+  <a class="carte-image" href="produit.html" tabindex="-1" aria-hidden="true">
+    <img src="static/images/raphia.svg" alt="" width="600" height="450" loading="lazy">
+    
+  </a>
+  <div class="carte-corps">
+    <h3><a href="produit.html">Pochette raphia brodée</a></h3>
+    <p class="carte-artisan">Atelier Njoya</p>
+    <div class="carte-pied">
+      <p class="prix">7 500 FCFA</p>
+      
+      <button type="button" class="bouton bouton-petit" data-ajout="8" aria-label="Ajouter Pochette raphia brodée au panier">Ajouter</button>
+      
+    </div>
+  </div>
+</article><article class="carte">
+  <a class="carte-image" href="produit.html" tabindex="-1" aria-hidden="true">
+    <img src="static/images/sculpture.svg" alt="" width="600" height="450" loading="lazy">
+    <span class="pastille pastille-vide">Épuisé</span>
+    
+  </a>
+  <div class="carte-corps">
+    <h3><a href="produit.html">Porte-clés sculpté</a></h3>
+    <p class="carte-artisan">Maison Ngoufo</p>
+    <div class="carte-pied">
+      <p class="prix">2 000 FCFA</p>
+      
+    </div>
+  </div>
+</article><article class="carte">
+  <a class="carte-image" href="produit.html" tabindex="-1" aria-hidden="true">
+    <img src="static/images/deco.svg" alt="" width="600" height="450" loading="lazy">
+    
+  </a>
+  <div class="carte-corps">
+    <h3><a href="produit.html">Pot à épices</a></h3>
+    <p class="carte-artisan">Maison Ngoufo</p>
+    <div class="carte-pied">
+      <p class="prix">4 500 FCFA</p>
+      
+      <button type="button" class="bouton bouton-petit" data-ajout="37" aria-label="Ajouter Pot à épices au panier">Ajouter</button>
+      
+    </div>
+  </div>
+</article><article class="carte">
+  <a class="carte-image" href="produit.html" tabindex="-1" aria-hidden="true">
+    <img src="static/images/raphia.svg" alt="" width="600" height="450" loading="lazy">
+    
+  </a>
+  <div class="carte-corps">
+    <h3><a href="produit.html">Sac bandoulière</a></h3>
+    <p class="carte-artisan">Atelier Tchoupo</p>
+    <div class="carte-pied">
+      <p class="prix">19 000 FCFA</p>
+      
+      <button type="button" class="bouton bouton-petit" data-ajout="34" aria-label="Ajouter Sac bandoulière au panier">Ajouter</button>
+      
+    </div>
+  </div>
+</article><article class="carte">
+  <a class="carte-image" href="produit.html" tabindex="-1" aria-hidden="true">
+    <img src="static/images/raphia.svg" alt="" width="600" height="450" loading="lazy">
+    
+  </a>
+  <div class="carte-corps">
+    <h3><a href="produit.html">Sac cabas en raphia</a></h3>
+    <p class="carte-artisan">Coopérative de Bamenda</p>
+    <div class="carte-pied">
+      <p class="prix">11 000 FCFA</p>
+      
+      <button type="button" class="bouton bouton-petit" data-ajout="7" aria-label="Ajouter Sac cabas en raphia au panier">Ajouter</button>
+      
+    </div>
+  </div>
+</article><article class="carte">
+  <a class="carte-image" href="produit.html" tabindex="-1" aria-hidden="true">
+    <img src="static/images/raphia.svg" alt="" width="600" height="450" loading="lazy">
+    
+  </a>
+  <div class="carte-corps">
+    <h3><a href="produit.html">Sac à dos raphia</a></h3>
+    <p class="carte-artisan">Mama Rose</p>
+    <div class="carte-pied">
+      <p class="prix">18 500 FCFA</p>
+      
+      <button type="button" class="bouton bouton-petit" data-ajout="10" aria-label="Ajouter Sac à dos raphia au panier">Ajouter</button>
+      
+    </div>
+  </div>
+</article><article class="carte">
+  <a class="carte-image" href="produit.html" tabindex="-1" aria-hidden="true">
+    <img src="static/images/sculpture.svg" alt="" width="600" height="450" loading="lazy">
+    <span class="pastille pastille-rare">Plus que 4</span>
+  </a>
+  <div class="carte-corps">
+    <h3><a href="produit.html">Statuette de la fertilité</a></h3>
+    <p class="carte-artisan">Coopérative de Bamenda</p>
+    <div class="carte-pied">
+      <p class="prix">20 500 FCFA</p>
+      
+      <button type="button" class="bouton bouton-petit" data-ajout="2" aria-label="Ajouter Statuette de la fertilité au panier">Ajouter</button>
+      
+    </div>
+  </div>
+</article><article class="carte">
+  <a class="carte-image" href="produit.html" tabindex="-1" aria-hidden="true">
+    <img src="static/images/sculpture.svg" alt="" width="600" height="450" loading="lazy">
+    <span class="pastille pastille-rare">Plus que 2</span>
+  </a>
+  <div class="carte-corps">
+    <h3><a href="produit.html">Tabouret royal sculpté</a></h3>
+    <p class="carte-artisan">Artisans de Foumban</p>
+    <div class="carte-pied">
+      <p class="prix">43 500 FCFA</p>
+      
+      <button type="button" class="bouton bouton-petit" data-ajout="3" aria-label="Ajouter Tabouret royal sculpté au panier">Ajouter</button>
+      
+    </div>
+  </div>
+</article><article class="carte">
+  <a class="carte-image" href="produit.html" tabindex="-1" aria-hidden="true">
+    <img src="static/images/deco.svg" alt="" width="600" height="450" loading="lazy">
+    <span class="pastille pastille-rare">Plus que 3</span>
+  </a>
+  <div class="carte-corps">
+    <h3><a href="produit.html">Tambour décoratif</a></h3>
+    <p class="carte-artisan">Atelier Tchoupo</p>
+    <div class="carte-pied">
+      <p class="prix">22 500 FCFA</p>
+      
+      <button type="button" class="bouton bouton-petit" data-ajout="27" aria-label="Ajouter Tambour décoratif au panier">Ajouter</button>
+      
+    </div>
+  </div>
+</article><article class="carte">
+  <a class="carte-image" href="produit.html" tabindex="-1" aria-hidden="true">
+    <img src="static/images/deco.svg" alt="" width="600" height="450" loading="lazy">
+    
+  </a>
+  <div class="carte-corps">
+    <h3><a href="produit.html">Tapis tressé</a></h3>
+    <p class="carte-artisan">Atelier Njoya</p>
+    <div class="carte-pied">
+      <p class="prix">18 000 FCFA</p>
+      
+      <button type="button" class="bouton bouton-petit" data-ajout="39" aria-label="Ajouter Tapis tressé au panier">Ajouter</button>
+      
+    </div>
+  </div>
+</article><article class="carte">
+  <a class="carte-image" href="produit.html" tabindex="-1" aria-hidden="true">
+    <img src="static/images/tissu.svg" alt="" width="600" height="450" loading="lazy">
+    
+  </a>
+  <div class="carte-corps">
+    <h3><a href="produit.html">Tissu bogolan</a></h3>
+    <p class="carte-artisan">Maison Ngoufo</p>
+    <div class="carte-pied">
+      <p class="prix">20 500 FCFA</p>
+      
+      <button type="button" class="bouton bouton-petit" data-ajout="15" aria-label="Ajouter Tissu bogolan au panier">Ajouter</button>
+      
+    </div>
+  </div>
+</article><article class="carte">
+  <a class="carte-image" href="produit.html" tabindex="-1" aria-hidden="true">
+    <img src="static/images/tissu.svg" alt="" width="600" height="450" loading="lazy">
+    
+  </a>
+  <div class="carte-corps">
+    <h3><a href="produit.html">Tissu wax 6 yards</a></h3>
+    <p class="carte-artisan">Maison Ngoufo</p>
+    <div class="carte-pied">
+      <p class="prix">21 500 FCFA</p>
+      
+      <button type="button" class="bouton bouton-petit" data-ajout="18" aria-label="Ajouter Tissu wax 6 yards au panier">Ajouter</button>
+      
+    </div>
+  </div>
+</article><article class="carte">
+  <a class="carte-image" href="produit.html" tabindex="-1" aria-hidden="true">
+    <img src="static/images/tissu.svg" alt="" width="600" height="450" loading="lazy">
+    
+  </a>
+  <div class="carte-corps">
+    <h3><a href="produit.html">Toghu brodé</a></h3>
+    <p class="carte-artisan">Mama Rose</p>
+    <div class="carte-pied">
+      <p class="prix">31 000 FCFA</p>
+      
+      <button type="button" class="bouton bouton-petit" data-ajout="13" aria-label="Ajouter Toghu brodé au panier">Ajouter</button>
+      
+    </div>
+  </div>
+</article><article class="carte">
+  <a class="carte-image" href="produit.html" tabindex="-1" aria-hidden="true">
+    <img src="static/images/deco.svg" alt="" width="600" height="450" loading="lazy">
+    <span class="pastille pastille-rare">Plus que 2</span>
+  </a>
+  <div class="carte-corps">
+    <h3><a href="produit.html">Vase en poterie</a></h3>
+    <p class="carte-artisan">Maison Ngoufo</p>
+    <div class="carte-pied">
+      <p class="prix">11 000 FCFA</p>
+      
+      <button type="button" class="bouton bouton-petit" data-ajout="25" aria-label="Ajouter Vase en poterie au panier">Ajouter</button>
+      
+    </div>
+  </div>
+</article><article class="carte">
+  <a class="carte-image" href="produit.html" tabindex="-1" aria-hidden="true">
+    <img src="static/images/tissu.svg" alt="" width="600" height="450" loading="lazy">
+    
+  </a>
+  <div class="carte-corps">
+    <h3><a href="produit.html">Écharpe tissée</a></h3>
+    <p class="carte-artisan">Atelier Njoya</p>
+    <div class="carte-pied">
+      <p class="prix">5 500 FCFA</p>
+      
+      <button type="button" class="bouton bouton-petit" data-ajout="16" aria-label="Ajouter Écharpe tissée au panier">Ajouter</button>
+      
+    </div>
+  </div>
+</article><article class="carte">
+  <a class="carte-image" href="produit.html" tabindex="-1" aria-hidden="true">
+    <img src="static/images/sculpture.svg" alt="" width="600" height="450" loading="lazy">
+    
+  </a>
+  <div class="carte-corps">
+    <h3><a href="produit.html">Éléphant en bois d&#39;ébène</a></h3>
+    <p class="carte-artisan">Atelier Njoya</p>
+    <div class="carte-pied">
+      <p class="prix">23 500 FCFA</p>
+      
+      <button type="button" class="bouton bouton-petit" data-ajout="4" aria-label="Ajouter Éléphant en bois d&#39;ébène au panier">Ajouter</button>
+      
+    </div>
+  </div>
+</article>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+  </main>
+
+  <footer class="pied">
+    <div class="conteneur pied-grille">
+      <div>
+        <p class="pied-titre">Mains de l'Ouest</p>
+        <p>Une coopérative d'artisans de Foumban et de Bamenda. Sculpture sur bois, raphia, tissage et bijoux.</p>
+      </div>
+      <div>
+        <p class="pied-titre">Commander</p>
+        <p>Paiement à la livraison ou par mobile money.</p>
+        <p><a href="catalogue.html">Parcourir le catalogue</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden>
+    <span id="toast-texte"></span>
+    <a href="panier.html">Voir le panier</a>
+  </div>
+
+  <script src="static/js/panier.js"></script>
+  
+</body>
+</html>

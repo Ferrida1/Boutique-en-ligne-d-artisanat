@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" role="img" aria-label="Vase en poterie">
+  <rect width="600" height="450" fill="#E6E9EF"/>
+  <rect y="380" width="600" height="70" fill="#CBD1DD"/>
+  <ellipse cx="300" cy="392" rx="120" ry="14" fill="#B8BFCE"/>
+  <path d="M250 70 H350 L346 120 C420 160 440 250 410 330 C395 372 360 392 300 392 C240 392 205 372 190 330 C160 250 180 160 254 120Z" fill="#8A4B2A"/>
+  <path d="M240 64 H360 V84 H240Z" fill="#6B3720"/>
+  <g fill="none" stroke="#F4F6F8" stroke-width="5">
+    <path d="M196 230 H404"/><path d="M200 300 H400"/>
+  </g>
+  <g fill="#F4F6F8"><path d="M230 265 l14 -14 l14 14 l-14 14z"/><path d="M293 265 l14 -14 l14 14 l-14 14z"/><path d="M356 265 l14 -14 l14 14 l-14 14z"/></g>
+  <g fill="#D9A021"><circle cx="300" cy="180" r="12"/><circle cx="250" cy="190" r="8"/><circle cx="350" cy="190" r="8"/></g>
+</svg>

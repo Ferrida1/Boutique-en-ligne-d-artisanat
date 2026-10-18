@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" role="img" aria-label="Tissu indigo à motifs">
+  <rect width="600" height="450" fill="#B7242D"/>
+  <defs>
+    <pattern id="m" width="60" height="60" patternUnits="userSpaceOnUse">
+      <rect width="60" height="60" fill="#16224A"/>
+      <path d="M30 6 L54 30 L30 54 L6 30Z" fill="none" stroke="#F4F6F8" stroke-width="3"/>
+      <path d="M30 18 L42 30 L30 42 L18 30Z" fill="#F4F6F8"/>
+      <circle cx="0" cy="0" r="5" fill="#F4F6F8"/><circle cx="60" cy="0" r="5" fill="#F4F6F8"/>
+      <circle cx="0" cy="60" r="5" fill="#F4F6F8"/><circle cx="60" cy="60" r="5" fill="#F4F6F8"/>
+    </pattern>
+  </defs>
+  <path d="M90 60 H510 V390 Q450 410 390 390 Q330 370 270 390 Q210 410 150 390 Q120 380 90 390Z" fill="url(#m)"/>
+  <path d="M90 60 H510 V84 H90Z" fill="#D9A021"/><path d="M90 366 Q120 356 150 366 Q210 386 270 366 Q330 346 390 366 Q450 386 510 366 V390 Q450 410 390 390 Q330 370 270 390 Q210 410 150 390 Q120 380 90 390Z" fill="#D9A021"/>
+</svg>

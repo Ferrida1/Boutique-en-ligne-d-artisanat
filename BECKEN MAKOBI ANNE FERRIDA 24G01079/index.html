@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sculptures, sacs en raphia, tissus et bijoux faits main par les artisans de Foumban et de Bamenda.">
+  <title>Artisanat de Foumban et de Bamenda – Mains de l'Ouest</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Instrument+Sans:wght@400;600&display=swap">
+  <link rel="stylesheet" href="static/css/style.css">
+  <link rel="icon" href="static/images/motif.svg" type="image/svg+xml">
+</head>
+<body>
+  <a class="lien-evitement" href="#contenu">Aller au contenu</a>
+  <header class="entete">
+    <div class="conteneur entete-grille">
+      <a class="marque" href="index.html">
+        <img src="static/images/motif.svg" alt="" width="34" height="34">
+        <span>Mains de l'Ouest</span>
+      </a>
+      <form class="recherche" role="search" method="get" action="catalogue.html">
+        <label class="sr-only" for="recherche-q">Rechercher un produit</label>
+        <input type="search" id="recherche-q" name="q" placeholder="Rechercher un masque, un sac, un pagne…" value="">
+        <button type="submit" class="recherche-bouton">Rechercher</button>
+      </form>
+      <a class="panier-lien" href="panier.html" aria-label="Voir le panier">
+        <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M3 4h2.5l2.2 10.5h9.6L19.5 7H7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9.5" cy="19" r="1.5" fill="currentColor"/><circle cx="16.5" cy="19" r="1.5" fill="currentColor"/></svg>
+        <span class="panier-compteur" id="compteur-panier">0</span>
+      </a>
+      <nav class="navigation" aria-label="Navigation principale">
+        <ul>
+          <li><a href="index.html" aria-current="page">Accueil</a></li>
+          <li><a href="catalogue.html" >Catalogue</a></li>
+          
+          <li><a href="admin_tableau.html">Administration</a></li>
+          
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  
+    
+  
+
+  <main id="contenu">
+    
+<section class="heros">
+  <div class="conteneur heros-grille">
+    <div class="heros-texte">
+      <h1>Taillé, tressé, tissé à la main à Foumban et à Bamenda.</h1>
+      <p>Masques en bois, sacs en raphia, pagnes, bijoux et poteries, directement des ateliers de la coopérative. Vous commandez en ligne, vous payez à la livraison ou par mobile money.</p>
+      <p class="heros-actions">
+        <a class="bouton bouton-laiton" href="catalogue.html">Voir le catalogue</a>
+        <a class="lien-clair" href="#categories">Parcourir par catégorie</a>
+      </p>
+    </div>
+    <div class="heros-visuel">
+      <img src="static/images/sculpture.svg" alt="Masque en bois sculpté, sur fond jaune laiton" width="600" height="450">
+    </div>
+  </div>
+</section>
+
+<section class="conteneur bloc" id="categories" aria-labelledby="titre-categories">
+  <h2 id="titre-categories">Cinq savoir-faire</h2>
+  <ul class="mosaique">
+    
+    <li class="tuile tuile-1">
+      <a href="catalogue.html">
+        <img src="static/images/bijou.svg" alt="" width="600" height="450" loading="lazy">
+        <span class="tuile-texte">
+          <strong>Bijoux</strong>
+          <span>7 pièces</span>
+        </span>
+      </a>
+    </li>
+    
+    <li class="tuile tuile-2">
+      <a href="catalogue.html">
+        <img src="static/images/deco.svg" alt="" width="600" height="450" loading="lazy">
+        <span class="tuile-texte">
+          <strong>Décoration</strong>
+          <span>10 pièces</span>
+        </span>
+      </a>
+    </li>
+    
+    <li class="tuile tuile-3">
+      <a href="catalogue.html">
+        <img src="static/images/raphia.svg" alt="" width="600" height="450" loading="lazy">
+        <span class="tuile-texte">
+          <strong>Sacs en raphia</strong>
+          <span>7 pièces</span>
+        </span>
+      </a>
+    </li>
+    
+    <li class="tuile tuile-4">
+      <a href="catalogue.html">
+        <img src="static/images/sculpture.svg" alt="" width="600" height="450" loading="lazy">
+        <span class="tuile-texte">
+          <strong>Sculptures</strong>
+          <span>8 pièces</span>
+        </span>
+      </a>
+    </li>
+    
+    <li class="tuile tuile-5">
+      <a href="catalogue.html">
+        <img src="static/images/tissu.svg" alt="" width="600" height="450" loading="lazy">
+        <span class="tuile-texte">
+          <strong>Tissus</strong>
+          <span>7 pièces</span>
+        </span>
+      </a>
+    </li>
+    
+  </ul>
+</section>
+
+<section class="conteneur bloc" aria-labelledby="titre-nouveautes">
+  <div class="bloc-entete">
+    <h2 id="titre-nouveautes">Derniers arrivages</h2>
+    <a href="catalogue.html">Tout le catalogue</a>
+  </div>
+  <div class="grille-produits">
+    <article class="carte">
+  <a class="carte-image" href="produit.html" tabindex="-1" aria-hidden="true">
+    <img src="static/images/deco.svg" alt="" width="600" height="450" loading="lazy">
+    
+  </a>
+  <div class="carte-corps">
+    <h3><a href="produit.html">Tapis tressé</a></h3>
+    <p class="carte-artisan">Atelier Njoya</p>
+    <div class="carte-pied">
+      <p class="prix">18 000 FCFA</p>
+      
+      <button type="button" class="bouton bouton-petit" data-ajout="39" aria-label="Ajouter Tapis tressé au panier">Ajouter</button>
+      
+    </div>
+  </div>
+</article><article class="carte">
+  <a class="carte-image" href="produit.html" tabindex="-1" aria-hidden="true">
+    <img src="static/images/sculpture.svg" alt="" width="600" height="450" loading="lazy">
+    
+  </a>
+  <div class="carte-corps">
+    <h3><a href="produit.html">Girafe en bois</a></h3>
+    <p class="carte-artisan">Coopérative de Bamenda</p>
+    <div class="carte-pied">
+      <p class="prix">12 000 FCFA</p>
+      
+      <button type="button" class="bouton bouton-petit" data-ajout="38" aria-label="Ajouter Girafe en bois au panier">Ajouter</button>
+      
+    </div>
+  </div>
+</article><article class="carte">
+  <a class="carte-image" href="produit.html" tabindex="-1" aria-hidden="true">
+    <img src="static/images/deco.svg" alt="" width="600" height="450" loading="lazy">
+    
+  </a>
+  <div class="carte-corps">
+    <h3><a href="produit.html">Pot à épices</a></h3>
+    <p class="carte-artisan">Maison Ngoufo</p>
+    <div class="carte-pied">
+      <p class="prix">4 500 FCFA</p>
+      
+      <button type="button" class="bouton bouton-petit" data-ajout="37" aria-label="Ajouter Pot à épices au panier">Ajouter</button>
+      
+    </div>
+  </div>
+</article><article class="carte">
+  <a class="carte-image" href="produit.html" tabindex="-1" aria-hidden="true">
+    <img src="static/images/bijou.svg" alt="" width="600" height="450" loading="lazy">
+    <span class="pastille pastille-rare">Plus que 3</span>
+  </a>
+  <div class="carte-corps">
+    <h3><a href="produit.html">Collier Bamenda</a></h3>
+    <p class="carte-artisan">Coopérative de Bamenda</p>
+    <div class="carte-pied">
+      <p class="prix">11 000 FCFA</p>
+      
+      <button type="button" class="bouton bouton-petit" data-ajout="36" aria-label="Ajouter Collier Bamenda au panier">Ajouter</button>
+      
+    </div>
+  </div>
+</article>
+  </div>
+</section>
+
+<section class="bande" aria-labelledby="titre-etapes">
+  <div class="conteneur">
+    <h2 id="titre-etapes">Commander en trois étapes</h2>
+    <ol class="etapes">
+      <li><strong>Choisissez</strong> vos pièces et ajoutez-les au panier. Les quantités s'ajustent selon le stock réel.</li>
+      <li><strong>Indiquez</strong> votre nom, votre téléphone et votre adresse de livraison.</li>
+      <li><strong>Payez</strong> à la livraison ou par mobile money. Le total est confirmé par le serveur.</li>
+    </ol>
+  </div>
+</section>
+
+  </main>
+
+  <footer class="pied">
+    <div class="conteneur pied-grille">
+      <div>
+        <p class="pied-titre">Mains de l'Ouest</p>
+        <p>Une coopérative d'artisans de Foumban et de Bamenda. Sculpture sur bois, raphia, tissage et bijoux.</p>
+      </div>
+      <div>
+        <p class="pied-titre">Commander</p>
+        <p>Paiement à la livraison ou par mobile money.</p>
+        <p><a href="catalogue.html">Parcourir le catalogue</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden>
+    <span id="toast-texte"></span>
+    <a href="panier.html">Voir le panier</a>
+  </div>
+
+  <script src="static/js/panier.js"></script>
+  
+</body>
+</html>

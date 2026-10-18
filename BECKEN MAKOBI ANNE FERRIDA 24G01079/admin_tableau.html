@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sculptures, sacs en raphia, tissus et bijoux faits main par les artisans de Foumban et de Bamenda.">
+  <title>Administration – Mains de l'Ouest</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Instrument+Sans:wght@400;600&display=swap">
+  <link rel="stylesheet" href="static/css/style.css">
+  <link rel="icon" href="static/images/motif.svg" type="image/svg+xml">
+</head>
+<body>
+  <a class="lien-evitement" href="#contenu">Aller au contenu</a>
+  <header class="entete">
+    <div class="conteneur entete-grille">
+      <a class="marque" href="index.html">
+        <img src="static/images/motif.svg" alt="" width="34" height="34">
+        <span>Mains de l'Ouest</span>
+      </a>
+      <form class="recherche" role="search" method="get" action="catalogue.html">
+        <label class="sr-only" for="recherche-q">Rechercher un produit</label>
+        <input type="search" id="recherche-q" name="q" placeholder="Rechercher un masque, un sac, un pagne…" value="">
+        <button type="submit" class="recherche-bouton">Rechercher</button>
+      </form>
+      <a class="panier-lien" href="panier.html" aria-label="Voir le panier">
+        <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M3 4h2.5l2.2 10.5h9.6L19.5 7H7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9.5" cy="19" r="1.5" fill="currentColor"/><circle cx="16.5" cy="19" r="1.5" fill="currentColor"/></svg>
+        <span class="panier-compteur" id="compteur-panier">0</span>
+      </a>
+      <nav class="navigation" aria-label="Navigation principale">
+        <ul>
+          <li><a href="index.html" >Accueil</a></li>
+          <li><a href="catalogue.html" >Catalogue</a></li>
+          
+          <li><a href="admin_tableau.html">Administration</a></li>
+          
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  
+    
+  
+
+  <main id="contenu">
+    
+<div class="conteneur bloc">
+<h1>Tableau de bord</h1>
+<nav class="sous-menu" aria-label="Administration">
+  <a href="admin_produits.html">Produits</a>
+  <a href="admin_commandes.html">Commandes (25 à traiter)</a>
+  <form method="post" action="connexion.html" class="en-ligne">
+    <input type="hidden" name="csrf" value="9d49031d94c4a39bd7192099fe2e73ac">
+    <button type="submit" class="bouton bouton-petit bouton-secondaire">Déconnexion</button>
+  </form>
+</nav>
+
+<section aria-labelledby="titre-alertes">
+  <h2 id="titre-alertes">Alerte stock (moins de 5)</h2>
+  
+  <ul class="alertes">
+    
+    <li><a href="admin_produit_form.html">Lampe en raphia</a> :
+      <strong>0</strong> en stock</li>
+    
+    <li><a href="admin_produit_form.html">Plateau en bois</a> :
+      <strong>0</strong> en stock</li>
+    
+    <li><a href="admin_produit_form.html">Porte-clés sculpté</a> :
+      <strong>0</strong> en stock</li>
+    
+    <li><a href="admin_produit_form.html">Cavalier Bamiléké</a> :
+      <strong>2</strong> en stock</li>
+    
+    <li><a href="admin_produit_form.html">Collier de perles</a> :
+      <strong>2</strong> en stock</li>
+    
+    <li><a href="admin_produit_form.html">Corbeille tressée</a> :
+      <strong>2</strong> en stock</li>
+    
+    <li><a href="admin_produit_form.html">Masque Bamoun</a> :
+      <strong>2</strong> en stock</li>
+    
+    <li><a href="admin_produit_form.html">Tabouret royal sculpté</a> :
+      <strong>2</strong> en stock</li>
+    
+    <li><a href="admin_produit_form.html">Vase en poterie</a> :
+      <strong>2</strong> en stock</li>
+    
+    <li><a href="admin_produit_form.html">Calebasse décorée</a> :
+      <strong>3</strong> en stock</li>
+    
+    <li><a href="admin_produit_form.html">Collier Bamenda</a> :
+      <strong>3</strong> en stock</li>
+    
+    <li><a href="admin_produit_form.html">Panier de marché</a> :
+      <strong>3</strong> en stock</li>
+    
+    <li><a href="admin_produit_form.html">Parure Bamoun</a> :
+      <strong>3</strong> en stock</li>
+    
+    <li><a href="admin_produit_form.html">Tambour décoratif</a> :
+      <strong>3</strong> en stock</li>
+    
+    <li><a href="admin_produit_form.html">Boucles d&#39;oreilles perlées</a> :
+      <strong>4</strong> en stock</li>
+    
+    <li><a href="admin_produit_form.html">Bracelet en laiton</a> :
+      <strong>4</strong> en stock</li>
+    
+    <li><a href="admin_produit_form.html">Chapeau en raphia</a> :
+      <strong>4</strong> en stock</li>
+    
+    <li><a href="admin_produit_form.html">Jeu d&#39;awalé</a> :
+      <strong>4</strong> en stock</li>
+    
+    <li><a href="admin_produit_form.html">Pendentif en ivoire végétal</a> :
+      <strong>4</strong> en stock</li>
+    
+    <li><a href="admin_produit_form.html">Statuette de la fertilité</a> :
+      <strong>4</strong> en stock</li>
+    
+  </ul>
+  
+</section>
+
+<section aria-labelledby="titre-stats">
+  <h2 id="titre-stats">Statistiques</h2>
+  <p>Panier moyen : <strong id="stat-panier-moyen">92 333 FCFA</strong></p>
+  <p class="aide">Les graphiques ci-dessous sont chargés par JavaScript depuis <code>/api/statistiques</code>.</p>
+  <div class="stats-grille">
+    <div>
+      <h3>Chiffre d'affaires par mois (livrées)</h3>
+      <div id="graph-ca" class="barres" aria-live="polite">Chargement…</div>
+    </div>
+    <div>
+      <h3>5 produits les plus vendus</h3>
+      <div id="graph-top" class="barres" aria-live="polite">Chargement…</div>
+    </div>
+    <div>
+      <h3>Modes de paiement</h3>
+      <div id="graph-paiement" class="barres" aria-live="polite">Chargement…</div>
+    </div>
+  </div>
+</section>
+</div>
+
+  </main>
+
+  <footer class="pied">
+    <div class="conteneur pied-grille">
+      <div>
+        <p class="pied-titre">Mains de l'Ouest</p>
+        <p>Une coopérative d'artisans de Foumban et de Bamenda. Sculpture sur bois, raphia, tissage et bijoux.</p>
+      </div>
+      <div>
+        <p class="pied-titre">Commander</p>
+        <p>Paiement à la livraison ou par mobile money.</p>
+        <p><a href="catalogue.html">Parcourir le catalogue</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden>
+    <span id="toast-texte"></span>
+    <a href="panier.html">Voir le panier</a>
+  </div>
+
+  <script src="static/js/panier.js"></script>
+  <script src="static/js/admin.js"></script>
+</body>
+</html>

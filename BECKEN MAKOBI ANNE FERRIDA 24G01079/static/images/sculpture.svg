@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" role="img" aria-label="Masque sculpté en bois">
+  <rect width="600" height="450" fill="#D9A021"/>
+  <g fill="#F2C14E"><path d="M0 330 L120 210 L240 330 L120 450Z"/><path d="M360 450 L480 330 L600 450Z"/></g>
+  <g transform="translate(300 225)">
+    <path d="M-34 -178 L0 -214 L34 -178 L22 -140 L-22 -140Z" fill="#16224A"/>
+    <path d="M-110 -70 C-110 -150 -64 -176 0 -176 C64 -176 110 -150 110 -70 C110 30 70 120 0 190 C-70 120 -110 30 -110 -70Z" fill="#16224A"/>
+    <path d="M-84 -66 C-84 -126 -50 -148 0 -148 C50 -148 84 -126 84 -66 C84 14 52 92 0 150 C-52 92 -84 14 -84 -66Z" fill="#2B3C82"/>
+    <path d="M-66 -70 Q-42 -96 -18 -70 Q-42 -56 -66 -70Z" fill="#F4F6F8"/>
+    <path d="M18 -70 Q42 -96 66 -70 Q42 -56 18 -70Z" fill="#F4F6F8"/>
+    <circle cx="-42" cy="-72" r="7" fill="#16224A"/><circle cx="42" cy="-72" r="7" fill="#16224A"/>
+    <path d="M-12 -52 L0 28 L12 -52Z" fill="#16224A"/>
+    <path d="M-34 64 Q0 90 34 64 Q0 106 -34 64Z" fill="#B7242D"/>
+    <g fill="#D9A021"><path d="M-110 -70 l-26 10 l26 10z"/><path d="M110 -70 l26 10 l-26 10z"/></g>
+    <path d="M-72 -118 L-40 -132 M72 -118 L40 -132" stroke="#D9A021" stroke-width="6" stroke-linecap="round"/>
+  </g>
+</svg>
